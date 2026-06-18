@@ -1,0 +1,14 @@
+<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#apg1" name="Common Content" gr:x="15" gr:y="1285">
+  <ViewComponents>
+    <ViewComponent id="wv1#apg1#gctu1" name="Logout" gr:x="0" gr:y="10">
+      <Events>
+        <OnSelectEvent id="wv1#apg1#gctu1#oslte3" name="Logout">
+          <NavigationFlow id="wv1#apg1#gctu1#oslte3#nf9" to="wv1#act3" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+    <MyProfile id="wv1#apg1#myp1" gr:x="115" gr:y="0">
+      <Events/>
+    </MyProfile>
+  </ViewComponents>
+</AbstractPage>

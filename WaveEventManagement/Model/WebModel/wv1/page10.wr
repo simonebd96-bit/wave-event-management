@@ -1,0 +1,21 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="810" gr:y="640" id="wv1#page10" name="Le Mie Prenotazioni">
+  <ViewComponents>
+    <List id="wv1#page10#lst4" checkable="false" distinct="false" gr:x="0" gr:y="0" name="Le Mie Prenotazioni">
+      <DataBinding classServiceRes="WaveEventManagementData$cls1"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att6" direction="desc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att5"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att6"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att7"/>
+    </List>
+  </ViewComponents>
+  <Events>
+    <OnSelectEvent id="wv1#page10#oslte50" name="Cancella Prenotazione">
+      <NavigationFlow id="wv1#page10#oslte50#nf42" to="wv1#act10">
+        <ParameterBinding id="wv1#page10#oslte50#nf42#par205" source="wv1#page10#lst4.WaveEventManagementData$att5" target="wv1#act10.WaveEventManagementData$pdp40" name="Codice Prenotazione - Codice Prenotazione"/>
+      </NavigationFlow>
+    </OnSelectEvent>
+    <OnSelectEvent id="wv1#page10#oslte51" name="Torna alla Home">
+      <NavigationFlow id="wv1#page10#oslte51#nf53" to="wv1#page1" automaticCoupling="true"/>
+    </OnSelectEvent>
+  </Events>
+</Page>

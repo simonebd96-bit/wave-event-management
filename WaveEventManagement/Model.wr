@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?webml version="9.3.1.0"?>
+
+<WebProject xmlns:bpm="http://www.webratio.com/2009/WebML/BPM" xmlns:gr="http://www.webratio.com/2006/WebML/Graph" outputPath="${webclientapps_loc}/${project_name}" gr:showUnitContent="true" gr:showTooltip="true" enableProjectDependencies="true" toolVersion="9.3.2">
+  <ReferencedProject name="Common" natureId="com.webratio.ide.styles.clientstylenature"/>
+  <ReferencedProject name="WebDefault" natureId="com.webratio.ide.styles.webstylenature"/>
+  <Roles/>
+  <ServiceDataProviders>
+    <IdentityProvider/>
+  </ServiceDataProviders>
+  <bpm:BpmProjects/>
+  <BundleKey name="ACCOUNT_DISABLED"/>
+  <BundleKey name="BAD_CREDENTIALS"/>
+  <BundleKey name="BAD_REQUEST"/>
+  <BundleKey name="INTERNAL_ERROR"/>
+  <BundleKey name="MAX_LOGIN_ATTEMPTS_REACHED"/>
+  <BundleKey name="PASSWORD_EXPIRED"/>
+  <BundleKey name="UNAUTHORIZED"/>
+  <BundleKey name="VALIDATION_FAILED"/>
+  <ReferencedProject name="WaveEventManagementData" natureId="com.webratio.ide.DataServiceNature" pid="WaveEventManagementData"/>
+</WebProject>

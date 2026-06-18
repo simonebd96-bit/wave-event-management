@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="515" gr:y="880" id="wv1#page14" name="Dettaglio e Prenotazione">
+  <ViewComponents>
+    <!-- Dettaglio completo evento -->
+    <List id="wv1#page14#lst10" checkable="false" distinct="false" gr:x="0" gr:y="0" name="Dettaglio Evento">
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att11" direction="asc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att10"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att11"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att13"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att14"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att15"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att16"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att17"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att18"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att19"/>
+    </List>
+  </ViewComponents>
+  <Events>
+    <!-- Prenota usando il Codice Evento dalla lista -->
+    <OnSelectEvent id="wv1#page14#oslte40" name="Prenota">
+      <NavigationFlow id="wv1#page14#oslte40#nf55" to="wv1#act9">
+        <ParameterBinding id="wv1#page14#oslte40#nf55#par80" source="wv1#page14#lst10.WaveEventManagementData$att9" target="wv1#act9.WaveEventManagementData$pdp38" name="Codice Evento - Codice Evento"/>
+      </NavigationFlow>
+    </OnSelectEvent>
+    <OnSelectEvent id="wv1#page14#oslte41" name="Torna alla Lista">
+      <NavigationFlow id="wv1#page14#oslte41#nf56" to="wv1#page13" automaticCoupling="true"/>
+    </OnSelectEvent>
+  </Events>
+</Page>

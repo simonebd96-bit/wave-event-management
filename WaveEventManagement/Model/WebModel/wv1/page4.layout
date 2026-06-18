@@ -1,0 +1,19 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card>
+      <wr-content for="content">
+        <form>
+          <wd-input floatLabel="auto" context="model:main/frm10/fld56" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-input>
+          <wd-input floatLabel="auto" context="model:main/frm10/fld57" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-input>
+          <wd-input floatLabel="auto" context="model:main/frm10/fld58" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-input>
+          <wd-input floatLabel="auto" context="model:main/frm10/fld60" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-input>
+          <wd-input floatLabel="auto" type="number" context="model:main/frm10/fld61" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-input>
+          <wd-input floatLabel="auto" type="number" context="model:main/frm10/fld62" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-input>
+          <wd-password floatLabel="auto" context="model:main/frm10/fld59" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-password>
+          <wd-password floatLabel="auto" context="model:main/frm10/fld68" [label]="labelOf('.') | wrLocalize" [fieldControl]="valueOf('control')"></wd-password>
+          <wd-button context="main/frm10/oslte10" color="primary"></wd-button>
+        </form>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

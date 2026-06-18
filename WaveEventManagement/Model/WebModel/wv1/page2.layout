@@ -1,0 +1,22 @@
+<wr-page>
+  <wr-content for="logo">
+    <img src="assets/WebDefault/images/webratio-logo.png" class="wd-logo-top-left">
+  </wr-content>
+  <wr-content for="login">
+    <wd-alert [messages]="valueOf('main/msg2/messages')" [localized]="true" color="primary"></wd-alert>
+    <wd-alert [messages]="valueOf('main/msg1/messages')" color="warn" [localized]="true" [dismissable]="true"></wd-alert>
+    <wd-card title="main/frm1">
+      <wr-content for="content">
+        <form>
+          <wd-password floatLabel="auto" context="model:main/frm1/fld1" [label]="labelOf('.') | wrLocalize"></wd-password>
+          <wd-password floatLabel="auto" context="model:main/frm1/fld2" [label]="labelOf('.') | wrLocalize"></wd-password>
+          <wd-password floatLabel="auto" context="model:main/frm1/fld3" [label]="labelOf('.') | wrLocalize"></wd-password>
+          <wd-button context="main/frm1/oslte1" color="primary"></wd-button>
+        </form>
+      </wr-content>
+      <wr-content for="title[frm1]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

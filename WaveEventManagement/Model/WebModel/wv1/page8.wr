@@ -1,0 +1,17 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="780" gr:y="90" id="wv1#page8" name="Dettaglio Evento">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv1#page8#lst8" name="Dettaglio Evento" checkable="false" distinct="false">
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att13" direction="asc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att10"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att11"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att13"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att14"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att15"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att16"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att17"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att18"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att19"/>
+    </List>
+  </ViewComponents>
+</Page>

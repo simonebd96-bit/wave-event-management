@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle>
+  <Entry key="ACCOUNT_DISABLED">Username o password non corretti.</Entry>
+  <Entry key="BAD_CREDENTIALS">Username o password non corretti.</Entry>
+  <Entry key="BAD_REQUEST">Si è verificato un errore. La preghiamo di contattare l'amministratore di sistema o di riprovare più tardi.</Entry>
+  <Entry key="INTERNAL_ERROR">Si è verificato un errore. La preghiamo di contattare l'amministratore di sistema o di riprovare più tardi.</Entry>
+  <Entry key="MAX_LOGIN_ATTEMPTS_REACHED">L'account è stato bloccato o disabilitato.</Entry>
+  <Entry key="PASSWORD_EXPIRED">La tua password è scaduta. Si prega di impostare una nuova password.</Entry>
+  <Entry key="UNAUTHORIZED">Username o password non corretti.</Entry>
+  <Entry key="VALIDATION_FAILED">Le informazioni inserite non sono corrette. Si prega di riprovare.</Entry>
+</Bundle>

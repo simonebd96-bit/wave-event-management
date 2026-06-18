@@ -1,0 +1,16 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-data-grid [rows]="valueOf('main/lst4/data')" cols="main/lst4/data/{Attribute}*">
+      <wr-content for="header[_be_att5]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att5]">{{ valueOf('.', row) }}</wr-content>
+      <wr-content for="header[_be_att6]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att6]">{{ valueOf('.', row) | date:'wr-timestamp' }}</wr-content>
+      <wr-content for="header[_be_att7]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att7]">{{ valueOf('.', row) }}</wr-content>
+      <wr-content for="header-actions">
+        <wd-button context="main/oslte50" iconText="delete" variant="mat-icon-button" color="warn"></wd-button>
+        <wd-button context="main/oslte51" color="accent"></wd-button>
+      </wr-content>
+    </wd-data-grid>
+  </wr-content>
+</wr-page>

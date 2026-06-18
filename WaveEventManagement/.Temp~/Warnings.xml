@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page15#lst11')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+</Warnings>

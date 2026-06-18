@@ -1,0 +1,11 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-alert [messages]="valueOf('main/msg60/messages')" color="warn" [localized]="true" [dismissable]="true"></wd-alert>
+    <form>
+      <wd-input floatLabel="auto" context="model:main/frm11/fld66"></wd-input>
+      <wd-password floatLabel="auto" context="model:main/frm11/fld67"></wd-password>
+      <wd-button context="main/frm11/oslte11" color="primary"></wd-button>
+      <wd-button context="main/frm11/oslte12" color="accent"></wd-button>
+    </form>
+  </wr-content>
+</wr-page>

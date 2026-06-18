@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle>
+  <Entry key="ACCOUNT_DISABLED">Username or password is incorrect.</Entry>
+  <Entry key="BAD_CREDENTIALS">Username or password is incorrect.</Entry>
+  <Entry key="BAD_REQUEST">An error occurred. Please contact the system administrator or try again later.</Entry>
+  <Entry key="INTERNAL_ERROR">An error occurred. Please contact the system administrator or try again later.</Entry>
+  <Entry key="MAX_LOGIN_ATTEMPTS_REACHED">The account has been locked or disabled.</Entry>
+  <Entry key="PASSWORD_EXPIRED">Your password has expired. Please set a new password.</Entry>
+  <Entry key="UNAUTHORIZED">Username or password is incorrect.</Entry>
+  <Entry key="VALIDATION_FAILED">The information entered is not correct. Please try again.</Entry>
+</Bundle>

@@ -1,0 +1,54 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page1" name="I miei Eventi" gr:x="530" gr:y="405" protected="false">
+  <ViewComponents>
+    <List id="wv1#page1#lst3" checkable="false" distinct="false" gr:x="0" gr:y="0" name="I Miei Eventi">
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att13" direction="asc"/>
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att11"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att10"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att12"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att13"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att14"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att15"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att16"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att17"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att18"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att19"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att9"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att102"/>
+      <ConditionalExpression id="wv1#page1#lst3#sc21" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv1#page1#lst3#sc21#acond6" name="filtra per utente" predicate="eq" booleanOperator="and" implied="true">
+          <AttributesConditionAttr classServiceAttribute="WaveEventManagementData$att102"/>
+        </AttributesCondition>
+      </ConditionalExpression>
+    </List>
+  </ViewComponents>
+  <Events>
+    <!-- Click su riga evento -> Modifica Evento -->
+    <!-- Crea nuovo evento -->
+    <OnSelectEvent id="wv1#page1#oslte160" name="Modifica Evento">
+      <NavigationFlow id="wv1#page1#oslte160#nf133" to="wv1#page15" automaticCoupling="true"/>
+    </OnSelectEvent>
+    <OnSelectEvent id="wv1#page1#oslte17" name="Crea Evento Pubblico">
+      <NavigationFlow id="wv1#page1#oslte17#nf134" to="wv1#page9#frm13" gr:bendpoints="76,17,-134,16">
+        <ParameterBinding id="wv1#page1#oslte17#nf134#par350" sourceParameter="wv1#page1#prd6" targetParameter="wv1#page9#prd7" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page1#oslte17#nf134#par351" sourceParameter="wv1#page1#prd9" targetParameter="wv1#page9#prd10" name="Username - Username"/>
+      </NavigationFlow>
+    </OnSelectEvent>
+    <!-- Cerca eventi pubblici -->
+    <OnSelectEvent id="wv1#page1#oslte18" name="Cerca Evento Pubblico">
+      <NavigationFlow id="wv1#page1#oslte18#nf38" to="wv1#page13" automaticCoupling="true"/>
+    </OnSelectEvent>
+    <!-- Le Mie Prenotazioni -->
+    <OnSelectEvent id="wv1#page1#oslte19" name="Le Mie Prenotazioni">
+      <NavigationFlow id="wv1#page1#oslte19#nf39" to="wv1#page10" automaticCoupling="true"/>
+    </OnSelectEvent>
+    <!-- Cambio Password -->
+    <OnSelectEvent id="wv1#page1#oslte100" name="Cambia Password">
+      <NavigationFlow id="wv1#page1#oslte100#nf40" to="wv1#page2" automaticCoupling="true"/>
+    </OnSelectEvent>
+  </Events>
+  <Parameters>
+    <Parameter id="wv1#page1#prd6" name="Codice_Utente" type="integer" preserve="true"/>
+    <Parameter id="wv1#page1#prd9" name="Username" type="string"/>
+  </Parameters>
+</Page>

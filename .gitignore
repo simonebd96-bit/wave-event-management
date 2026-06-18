@@ -1,0 +1,20 @@
+# 1. Ignora la cache e le configurazioni di WebRatio/Eclipse
+.metadata/
+.wrnode/
+.wrwork/
+languageServers-log/
+Progetti Archiviati/
+_wr-auth-admin-temp-prj/
+
+# 2. Ignora i pacchetti Node pesantissimi (si rigenerano da soli)
+node_modules/
+
+# 3. Ignora il codice generato DENTRO i tuoi due progetti
+WaveEventManagement/Deploy/
+WaveEventManagement/Generated/
+WaveEventManagementData/Deploy/
+WaveEventManagementData/Generated/
+
+# File di sistema
+.DS_Store
+*.log

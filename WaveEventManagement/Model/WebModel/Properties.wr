@@ -1,0 +1,11 @@
+<WebModel xmlns:layout="http://www.webratio.com/2006/WebML/Layout" defaultLocale="lcl1" layout:style="WebDefault" layout:pageTemplate="WebDefault/Default" layout:theme="webratio" edtLvl="Platform Community Edition # 20260425" edtLvlCtrl="UGxhdGZvcm0gQ29tbXVuaXR5IEVkaXRpb24gIyAyMDI2MDQyNQ==" homeWebView="wv1">
+  <Locale id="lcl1" language="it">
+    <PatternConfiguration deviceDefault="true" type="boolean" pattern="si|no"/>
+    <PatternConfiguration deviceDefault="true" type="decimal" useNumberPattern="false" maxDecimal="2" minDecimal="0" minInteger="1" useThousandSeparator="true"/>
+    <PatternConfiguration deviceDefault="true" type="date" pattern="d/M/yy"/>
+    <PatternConfiguration deviceDefault="true" type="float" useNumberPattern="false" maxDecimal="3" minDecimal="0" minInteger="1" useThousandSeparator="true"/>
+    <PatternConfiguration deviceDefault="true" type="integer" useNumberPattern="false" minInteger="1" useThousandSeparator="true"/>
+    <PatternConfiguration deviceDefault="true" type="time" pattern="HH:mm:ss"/>
+    <PatternConfiguration deviceDefault="true" type="timestamp" pattern="d/M/yy, HH:mm:ss"/>
+  </Locale>
+</WebModel>

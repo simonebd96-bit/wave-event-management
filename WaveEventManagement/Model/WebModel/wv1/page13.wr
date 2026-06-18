@@ -1,0 +1,22 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="525" gr:y="635" id="wv1#page13" name="Ricerca Eventi Pubblici">
+  <ViewComponents>
+    <List id="wv1#page13#lst9" checkable="false" distinct="false" gr:x="0" gr:y="0" name="Eventi Pubblici">
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att13" direction="asc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att10"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att11"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att13"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att17"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att16"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att15"/>
+    </List>
+  </ViewComponents>
+  <Events>
+    <OnSelectEvent id="wv1#page13#oslte30" name="Vedi Dettaglio e Prenota">
+      <NavigationFlow id="wv1#page13#oslte30#nf50" to="wv1#page14" automaticCoupling="true"/>
+    </OnSelectEvent>
+    <OnSelectEvent id="wv1#page13#oslte31" name="Torna alla Home">
+      <NavigationFlow id="wv1#page13#oslte31#nf51" to="wv1#page1" automaticCoupling="true"/>
+    </OnSelectEvent>
+  </Events>
+</Page>

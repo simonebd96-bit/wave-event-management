@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="585" gr:y="1190" id="wv1#page12" name="Gestione Partecipanti">
+  <ViewComponents>
+    <List id="wv1#page12#lst6" checkable="false" distinct="false" gr:x="0" gr:y="0">
+      <DataBinding classServiceRes="WaveEventManagementData$cls1"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att6" direction="desc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att5"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att6"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att7"/>
+    </List>
+    <List id="wv1#page12#lst7" checkable="false" distinct="false" gr:x="400" gr:y="0" name="Messaggi Bacheca">
+      <DataBinding classServiceRes="WaveEventManagementData$cls5"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att28" direction="desc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att27"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att28"/>
+    </List>
+    <Form gr:x="400" gr:y="200" id="wv1#page12#frm15" name="Pubblica Messaggio">
+      <DataBinding classServiceRes="WaveEventManagementData$cls5"/>
+      <Field id="wv1#page12#frm15#fld95" modifiable="true" name="Testo" type="string">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page12#frm15#fld95#mnd120" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att27"/>
+      </Field>
+      <Events>
+        <OnSelectEvent id="wv1#page12#frm15#oslte24" name="Pubblica" validate="true">
+          <NavigationFlow id="wv1#page12#frm15#oslte24#nf45" to="wv1#page12" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

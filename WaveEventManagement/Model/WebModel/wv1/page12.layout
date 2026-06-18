@@ -1,0 +1,26 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-data-grid [rows]="valueOf('main/lst6/data')" cols="main/lst6/data/{Attribute}*">
+      <wr-content for="header[_be_att5]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att5]">{{ valueOf('.', row) }}</wr-content>
+      <wr-content for="header[_be_att6]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att6]">{{ valueOf('.', row) | date:'wr-timestamp' }}</wr-content>
+      <wr-content for="header[_be_att7]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att7]">{{ valueOf('.', row) }}</wr-content>
+    </wd-data-grid>
+    <wd-card>
+      <wr-content for="content">
+        <wd-data-grid [rows]="valueOf('main/lst7/data')" cols="main/lst7/data/{Attribute}*">
+          <wr-content for="header[_be_att27]">{{ labelOf('.') | wrLocalize }}</wr-content>
+          <wr-content for="data[_be_att27]">{{ valueOf('.', row) }}</wr-content>
+          <wr-content for="header[_be_att28]">{{ labelOf('.') | wrLocalize }}</wr-content>
+          <wr-content for="data[_be_att28]">{{ valueOf('.', row) | date:'wr-timestamp' }}</wr-content>
+        </wd-data-grid>
+        <form>
+          <wd-input floatLabel="auto" context="model:main/frm15/fld95" [label]="labelOf('.') | wrLocalize"></wd-input>
+          <wd-button context="main/frm15/oslte24" color="primary"></wd-button>
+        </form>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

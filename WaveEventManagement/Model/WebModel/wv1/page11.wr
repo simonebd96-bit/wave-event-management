@@ -1,0 +1,22 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1295" gr:y="665" id="wv1#page11" name="Dashboard Organizzatore">
+  <ViewComponents>
+    <List id="wv1#page11#lst5" checkable="false" distinct="false" gr:x="0" gr:y="0">
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att13" direction="asc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att10"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att11"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att13"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att14"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att15"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att16"/>
+    </List>
+  </ViewComponents>
+  <Events>
+    <OnSelectEvent id="wv1#page11#oslte22" name="Crea Nuovo Evento">
+      <NavigationFlow id="wv1#page11#oslte22#nf43" to="wv1#page9#frm13" automaticCoupling="true"/>
+    </OnSelectEvent>
+    <OnSelectEvent id="wv1#page11#oslte23" name="Gestisci Partecipanti">
+      <NavigationFlow id="wv1#page11#oslte23#nf44" to="wv1#page12" automaticCoupling="true"/>
+    </OnSelectEvent>
+  </Events>
+</Page>

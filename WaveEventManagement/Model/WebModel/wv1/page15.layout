@@ -1,0 +1,20 @@
+<wr-page>
+  <wr-content for="page-content">
+    <form>
+      <wd-input floatLabel="auto" context="model:main/frm17/fld109" [showLabel]="true"></wd-input>
+      <wd-input floatLabel="auto" context="model:main/frm17/fld100" [showLabel]="true"></wd-input>
+      <wd-input floatLabel="auto" context="model:main/frm17/fld101" [showLabel]="true"></wd-input>
+      <wd-input type="datetime-local" floatLabel="auto" context="model:main/frm17/fld102" [showLabel]="true"></wd-input>
+      <wd-input type="datetime-local" floatLabel="auto" context="model:main/frm17/fld103" [showLabel]="true"></wd-input>
+      <wd-input floatLabel="auto" context="model:main/frm17/fld104" [showLabel]="true"></wd-input>
+      <wd-input type="number" floatLabel="auto" context="model:main/frm17/fld105" [showLabel]="true"></wd-input>
+      <wd-input type="number" floatLabel="auto" context="model:main/frm17/fld106" [showLabel]="true"></wd-input>
+      <wd-input type="number" floatLabel="auto" context="model:main/frm17/fld107" [showLabel]="true"></wd-input>
+      <wd-input floatLabel="auto" context="model:main/frm17/fld108" [showLabel]="true"></wd-input>
+    </form>
+  </wr-content>
+  <wr-content for="footer-content">
+    <wd-button context="main/frm17/oslte60" color="primary"></wd-button>
+    <wd-button context="main/frm17/oslte61" color="accent"></wd-button>
+  </wr-content>
+</wr-page>

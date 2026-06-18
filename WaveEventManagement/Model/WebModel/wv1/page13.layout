@@ -1,0 +1,24 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-data-grid [rows]="valueOf('main/lst9/data')" cols="main/lst9/data/{Attribute}*">
+      <wr-content for="header[_be_att10]">{{ 'Tipo' | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att10]">{{ valueOf('.', row) }}</wr-content>
+      <wr-content for="header[_be_att11]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att11]">{{ valueOf('.', row) }}</wr-content>
+      <wr-content for="header[_be_att13]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att13]">{{ valueOf('.', row) | date:'wr-timestamp' }}</wr-content>
+      <wr-content for="header[_be_att17]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att17]">{{ valueOf('.', row) }}</wr-content>
+      <wr-content for="header[_be_att16]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att16]">{{ valueOf('.', row) | number:'wr-decimal' }} €</wr-content>
+      <wr-content for="header[_be_att15]">{{ labelOf('.') | wrLocalize }}</wr-content>
+      <wr-content for="data[_be_att15]">{{ valueOf('.', row) | number:'wr-integer' }}</wr-content>
+      <wr-content for="header-actions">
+        <wd-button context="main/oslte30" iconText="event_available" variant="mat-icon-button"></wd-button>
+      </wr-content>
+    </wd-data-grid>
+  </wr-content>
+  <wr-content for="footer-content">
+    <wd-button context="main/oslte31" color="accent"></wd-button>
+  </wr-content>
+</wr-page>

@@ -1,0 +1,68 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page4" name="Registrazione" gr:x="40" gr:y="400" urlName="registrazione">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv1#page4#frm10" name="registrati">
+      <DataBinding classServiceRes="WaveEventManagementData$User"/>
+      <Field id="wv1#page4#frm10#fld56" modifiable="true" name="Username" type="string">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page4#frm10#fld56#mnd1" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$userName"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld57" modifiable="true" name="Nome" type="string">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page4#frm10#fld57#mnd2" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att1"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld58" modifiable="true" name="Cognome" type="string">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page4#frm10#fld58#mnd3" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att2"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld59" modifiable="true" name="Secret Key" type="password">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page4#frm10#fld59#mnd4" name="mandatory"/>
+          <PasswordStrengthValidationRule id="wv1#page4#frm10#fld59#psvr1" name="password strength" securityLevel="medium"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$secretKey"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld60" modifiable="true" name="e-mail" type="string">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page4#frm10#fld60#mnd5" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att3"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld61" modifiable="true" name="Eta" type="integer">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att20"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld62" modifiable="true" name="Saldo Wallet" type="decimal">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att30"/>
+      </Field>
+      <Field id="wv1#page4#frm10#fld68" modifiable="true" name="Password" type="password">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page4#frm10#fld68#mnd6" name="mandatory"/>
+          <PasswordStrengthValidationRule id="wv1#page4#frm10#fld68#psvr2" name="password strength" securityLevel="medium"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att31"/>
+      </Field>
+      <DataFlow id="wv1#page4#frm10#df3" to="wv1#act4" name="registrati">
+        <ParameterBinding id="wv1#page4#frm10#df3#par107" source="{wv1#page4#frm10#fld58}value" target="wv1#act4.WaveEventManagementData$pdp1" name="Cognome - Cognome"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par108" source="{wv1#page4#frm10#fld60}value" target="wv1#act4.WaveEventManagementData$pdp4" name="e-mail - e-mail"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par109" source="{wv1#page4#frm10#fld61}value" target="wv1#act4.WaveEventManagementData$pdp5" name="Eta - Eta"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par110" source="{wv1#page4#frm10#fld57}value" target="wv1#act4.WaveEventManagementData$pdp3" name="Nome - Nome"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par111" source="{wv1#page4#frm10#fld68}value" target="wv1#act4.WaveEventManagementData$pdp22" name="Password - Password"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par112" source="{wv1#page4#frm10#fld62}value" target="wv1#act4.WaveEventManagementData$pdp9" name="Saldo Wallet - Saldo Wallet"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par113" source="{wv1#page4#frm10#fld59}value" target="wv1#act4.WaveEventManagementData$pdp8" name="Secret Key - Secret Key"/>
+        <ParameterBinding id="wv1#page4#frm10#df3#par114" source="{wv1#page4#frm10#fld56}value" target="wv1#act4.WaveEventManagementData$pdp6" name="Username - Username"/>
+      </DataFlow>
+      <Events>
+        <OnSelectEvent id="wv1#page4#frm10#oslte10" name="registrati" validate="true">
+          <NavigationFlow id="wv1#page4#frm10#oslte10#nf24" to="wv1#act4" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

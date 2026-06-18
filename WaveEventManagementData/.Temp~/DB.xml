@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DBMetaData transactionLevel="Read Committed" productName="PostgreSQL" identifierQuoteString="&quot;" productVersion="15.18" driverVersion="42.7.11" driverMajorVersion="42" driverMinorVersion="7" driverName="PostgreSQL JDBC Driver">
+  <Schema name="information_schema"/>
+  <Schema name="pg_catalog"/>
+  <Schema name="public"/>
+  <Table schema="public" refreshed="true" type="TABLE" name="BACHECA_2" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="CODICE_BACHECA" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="NOME_BACHECA" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="EVENTO_2_CODICE_EVENTO" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_bacheca_2_evento_2" foreignColumnName="CODICE_EVENTO" foreignTableName="EVENTO_2" localColumnName="EVENTO_2_CODICE_EVENTO"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="EVENTO_2" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="CODICE_EVENTO" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="ISPUBBLICO" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="TITOLO" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamptz" size="35" name="DATA_CREAZIONE" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamptz" size="35" name="DATA_INIZIO" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamptz" size="35" name="DATA_FINE" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="NUMERO_POSTI" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="2" indexed="unknown" notNull="false" autoIncrement="false" type="numeric" size="19" name="COSTO_EVENTO" decimalDigits="2" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="LUOGO" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="ETA_MINIMA" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="DESCRIZIONE" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="USER_3_CODICE_USER" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="TIPOLOGIA_EVENTO_2_CODICE_TIPO" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_evento_2_tipologia_evento_2" foreignColumnName="CODICE_TIPOLOGIA_EVENTO" foreignTableName="TIPOLOGIA_EVENTO_2" localColumnName="TIPOLOGIA_EVENTO_2_CODICE_TIPO"/>
+    <ForeignKey foreignSchemaName="public" name="fk_evento_2_user_3" foreignColumnName="CODICE_USER" foreignTableName="USER_3" localColumnName="USER_3_CODICE_USER"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="MESSAGGIO_2" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="CODICE_MESSAGGIO" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="TESTO" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="CREAZIONE" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="BACHECA_2_CODICE_BACHECA" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="USER_3_CODICE_USER" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_messaggio_2_bacheca_2" foreignColumnName="CODICE_BACHECA" foreignTableName="BACHECA_2" localColumnName="BACHECA_2_CODICE_BACHECA"/>
+    <ForeignKey foreignSchemaName="public" name="fk_messaggio_2_user_3" foreignColumnName="CODICE_USER" foreignTableName="USER_3" localColumnName="USER_3_CODICE_USER"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="PRENOTAZIONE_2" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="CODICE_PRENOTAZIONE" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="DATA_PRENOTAZIONE" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="5" indexed="unknown" notNull="false" autoIncrement="false" type="int2" size="5" name="ISATTIVA" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="USER_3_CODICE_USER" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="EVENTO_2_CODICE_EVENTO" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_prenotazione_2_evento_2" foreignColumnName="CODICE_EVENTO" foreignTableName="EVENTO_2" localColumnName="EVENTO_2_CODICE_EVENTO"/>
+    <ForeignKey foreignSchemaName="public" name="fk_prenotazione_2_user_3" foreignColumnName="CODICE_USER" foreignTableName="USER_3" localColumnName="USER_3_CODICE_USER"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="TIPOLOGIA_EVENTO_2" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="CODICE_TIPOLOGIA_EVENTO" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="NOME" decimalDigits="0" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="USER_3" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="CODICE_USER" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="SECRET_KEY" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="NOME" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="COGNOME" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="ETA" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="EMAIL" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="2" indexed="unknown" notNull="false" autoIncrement="false" type="numeric" size="19" name="SALDO_WALLET" decimalDigits="2" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="PASSWORD" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="USERNAME" decimalDigits="0" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="WR_DELETE_HISTORY" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="OID" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="OBJECT_ID" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="CLASS_ID" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="DELETED_AT" decimalDigits="6" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="application" ignoreIndexes="false">
+    <Column sqlTypeId="12" indexed="unknown" notNull="true" autoIncrement="false" type="varchar" size="255" name="app_id" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="refresh_token_validity" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="access_token_validity" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="secret" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="description" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="name" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="type" decimalDigits="0" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="approval" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="updated_at" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="expiration_date" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="status" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="scope" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="identity_user_id" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fkempy1a67rtlruq2ito713tbct" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+    <ForeignKey foreignSchemaName="public" name="fkg3daut0u4a2ntke5a8vgvng9t" foreignColumnName="user_id" foreignTableName="identity" localColumnName="identity_user_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="authorized_grant_type" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="name" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fkiw47yk4r4p6uephlehjson95c" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="authorized_resource" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="name" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fkmijoxkcp55ft1xbsvdh80nl9t" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="bacheca" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="codice_bacheca" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="nome_bacheca" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="evento_codice_evento" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_bacheca_evento" foreignColumnName="codice_evento" foreignTableName="evento" localColumnName="evento_codice_evento"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="claim" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="key" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="1000" name="value" decimalDigits="0" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="claim_identity" ignoreIndexes="false">
+    <Column sqlTypeId="12" indexed="unknown" notNull="true" autoIncrement="false" type="varchar" size="255" name="identity_user_id" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="claim_oid" decimalDigits="0" primaryKey="true"/>
+    <ForeignKey foreignSchemaName="public" name="fkjb74vr7rtabd4i3l0gkmrvuul" foreignColumnName="oid" foreignTableName="claim" localColumnName="claim_oid"/>
+    <ForeignKey foreignSchemaName="public" name="fkpbvrttjpgi1yhcqswa6fq91qs" foreignColumnName="user_id" foreignTableName="identity" localColumnName="identity_user_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="code" ignoreIndexes="false">
+    <Column sqlTypeId="12" indexed="unknown" notNull="true" autoIncrement="false" type="varchar" size="255" name="code" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="authentication" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="-5" indexed="unknown" notNull="false" autoIncrement="false" type="oid" size="10" name="authenticationblob" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="creation_date" decimalDigits="6" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="device" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="identity_user_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="device_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="notification_device_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="model" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="platform" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="platform_version" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="browser" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fktdy2j4xgrmcfpdwj85rqy6hum" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+    <ForeignKey foreignSchemaName="public" name="fkpivgv9cavyhqc7qwwpc6ncnr4" foreignColumnName="user_id" foreignTableName="identity" localColumnName="identity_user_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="evento" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="codice_evento" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="ispubblico" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="titolo" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="data_creazione" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="data_inizio" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="data_fine" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="numero_posti" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="2" indexed="unknown" notNull="false" autoIncrement="false" type="numeric" size="19" name="costo_evento" decimalDigits="2" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="luogo" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="eta_minima" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="descrizione" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="user_3_codice_user" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="tipologia_evento_codice_tipolo" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_evento_user_3" foreignColumnName="CODICE_USER" foreignTableName="USER_3" localColumnName="user_3_codice_user"/>
+    <ForeignKey foreignSchemaName="public" name="fk_evento_tipologia_evento" foreignColumnName="codice_tipologia_evento" foreignTableName="tipologia_evento" localColumnName="tipologia_evento_codice_tipolo"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="identity" ignoreIndexes="false">
+    <Column sqlTypeId="12" indexed="unknown" notNull="true" autoIncrement="false" type="varchar" size="255" name="user_id" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="-7" indexed="unknown" notNull="false" autoIncrement="false" type="bool" size="1" name="expired" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" notNull="false" autoIncrement="false" type="bool" size="1" name="locked" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="password" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" notNull="false" autoIncrement="false" type="bool" size="1" name="disabled" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="attempts_number" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="password_expiration_date" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="email" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" notNull="false" autoIncrement="false" type="bool" size="1" name="auth_admin" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="first_name" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="last_name" decimalDigits="0" primaryKey="false"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="messaggio" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="codice_messaggio" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="testo" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="creazione" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="bacheca_codice_bacheca" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="user_3_codice_user" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_messaggio_user_3" foreignColumnName="CODICE_USER" foreignTableName="USER_3" localColumnName="user_3_codice_user"/>
+    <ForeignKey foreignSchemaName="public" name="fk_messaggio_bacheca" foreignColumnName="codice_bacheca" foreignTableName="bacheca" localColumnName="bacheca_codice_bacheca"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="prenotazione" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="codice_prenotazione" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="data_prenotazione" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" notNull="false" autoIncrement="false" type="bool" size="1" name="isattiva" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="user_3_codice_user" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="4" indexed="unknown" notNull="false" autoIncrement="false" type="int4" size="10" name="evento_codice_evento" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk_prenotazione_user_3" foreignColumnName="CODICE_USER" foreignTableName="USER_3" localColumnName="user_3_codice_user"/>
+    <ForeignKey foreignSchemaName="public" name="fk_prenotazione_evento" foreignColumnName="codice_evento" foreignTableName="evento" localColumnName="evento_codice_evento"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="redirect_uri" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="url" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fkthnmf87gdtp9k0v3lgvc0jklk" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="refresh_token" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="2500" name="token" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="93" indexed="unknown" notNull="false" autoIncrement="false" type="timestamp" size="29" name="expiration_date" decimalDigits="6" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="identity_user_id" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fk3327cxqlji6p8s4834bx9l0fr" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+    <ForeignKey foreignSchemaName="public" name="fk6oykyydwt9mjtf9r6nxp51091" foreignColumnName="user_id" foreignTableName="identity" localColumnName="identity_user_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="scope" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="oid" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="application_app_id" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="-7" indexed="unknown" notNull="false" autoIncrement="false" type="bool" size="1" name="auto_approve" decimalDigits="0" primaryKey="false"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="name" decimalDigits="0" primaryKey="false"/>
+    <ForeignKey foreignSchemaName="public" name="fkdawnojf2b8jb9bu10xc0kcjs2" foreignColumnName="app_id" foreignTableName="application" localColumnName="application_app_id"/>
+  </Table>
+  <Table schema="public" refreshed="true" type="TABLE" name="tipologia_evento" ignoreIndexes="false">
+    <Column sqlTypeId="4" indexed="unknown" notNull="true" autoIncrement="false" type="int4" size="10" name="codice_tipologia_evento" decimalDigits="0" primaryKey="true"/>
+    <Column sqlTypeId="12" indexed="unknown" notNull="false" autoIncrement="false" type="varchar" size="255" name="nome" decimalDigits="0" primaryKey="false"/>
+  </Table>
+</DBMetaData>

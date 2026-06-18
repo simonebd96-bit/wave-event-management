@@ -1,0 +1,37 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada2" name="Login2" defaultSuccessPortDefinition="tlads0#ada2#spd5" defaultErrorPortDefinition="tlads0#ada2#epd4" transaction="true">
+  <InputPortDefinition id="tlads0#ada2#ipd4" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ada2#ipd4#sf17" to="tlads0#ada2#seu2">
+      <ParameterBinding id="tlads0#ada2#ipd4#sf17#par18" source="tlads0#ada2#ipd4#pdp20" target="tlads0#ada2#seu2#sc5#acond2" name="Password - Password"/>
+      <ParameterBinding id="tlads0#ada2#ipd4#sf17#par19" source="tlads0#ada2#ipd4#pdp21" target="tlads0#ada2#seu2#sc5#acond1" name="Username - Username"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ada2#ipd4#pdp20" array="false" name="Password" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada2#ipd4#pdp21" array="false" name="Username" type="string"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ada2#spd5" name="Success Port" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ada2#spd5#pdp13" name="Codice_Utente" type="integer"/>
+    <PortDefinitionParameter id="tlads0#ada2#spd5#pdp14" name="Username" type="string"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ada2#epd4" name="Error Port" gr:x="0" gr:y="300"/>
+  <Operations>
+    <Selector gr:x="415" gr:y="160" id="tlads0#ada2#seu2" dataBinding="User" distinctAttributes="userName User#att31 userOID User#att1 User#att2 User#att20 User#att3 User#att30" maxResults="1">
+      <ConditionalExpression id="tlads0#ada2#seu2#sc5" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="tlads0#ada2#seu2#sc5#acond1" name="Username" predicate="eq" implied="true" attributes="userName" booleanOperator="and"/>
+        <AttributesCondition id="tlads0#ada2#seu2#sc5#acond2" name="Password" predicate="eq" implied="true" attributes="User#att31" booleanOperator="and"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada2#seu2#sf2" to="tlads0#ada2#switch2">
+        <ParameterBinding id="tlads0#ada2#seu2#sf2#par26" source="userOIDArray" passing="true" name="codice_user - PASSING"/>
+        <ParameterBinding id="tlads0#ada2#seu2#sf2#par27" source="dataSize" target="tlads0#ada2#switch2.switch" name="Data Size - Switch"/>
+        <ParameterBinding id="tlads0#ada2#seu2#sf2#par34" source="userNameArray" passing="true" name="username - PASSING"/>
+      </SuccessFlow>
+    </Selector>
+    <Switch gr:x="590" gr:y="185" id="tlads0#ada2#switch2" name="Switch 2">
+      <SuccessFlow id="tlads0#ada2#switch2#sf3" to="tlads0#ada2#spd5" code="1">
+        <ParameterBinding id="tlads0#ada2#switch2#sf3#par33" sourceParameterBinding="tlads0#ada2#seu2#sf2#par26" target="tlads0#ada2#spd5#pdp13" name="codice_user - PASSING - Codice_Utente"/>
+        <ParameterBinding id="tlads0#ada2#switch2#sf3#par37" sourceParameterBinding="tlads0#ada2#seu2#sf2#par34" target="tlads0#ada2#spd5#pdp14" name="username - PASSING - Username"/>
+      </SuccessFlow>
+      <SuccessFlow id="tlads0#ada2#switch2#sf4" to="tlads0#ada2#epd4" automaticCoupling="true" code="0"/>
+      <Case value="1"/>
+      <Case value="0"/>
+    </Switch>
+  </Operations>
+</ActionDefinition>
