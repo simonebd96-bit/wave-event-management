@@ -59,7 +59,11 @@
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv1#page9#frm13#oslte90" name="Annulla">
-          <NavigationFlow id="wv1#page9#frm13#oslte90#nf32" to="wv1#page1" gr:bendpoints="-163,146,346,-65" automaticCoupling="true"/>
+          <NavigationFlow id="wv1#page9#frm13#oslte90#nf32" to="wv1#page1#lst3" gr:bendpoints="-163,146,346,-65">
+            <ParameterBinding id="wv1#page9#frm13#oslte90#nf32#par24" sourceParameter="wv1#page9#prd7" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte90#nf32#par25" source="key._be_att9" target="current._be_att9" name="Key [codiceEvento] - Current codiceEvento"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte90#nf32#par26" sourceParameter="wv1#page9#prd10" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+          </NavigationFlow>
         </OnSelectEvent>
       </Events>
     </Form>

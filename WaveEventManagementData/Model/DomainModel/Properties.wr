@@ -44,7 +44,7 @@
   <Class id="cls1" name="Prenotazione" duration="persistent" gr:x="500" gr:y="140" attributeOrder="cls1#att5 cls1#att6 cls1#att7" volatileStorage="database" db:database="dbD1" db:table="prenotazione">
     <Attribute id="cls1#att5" key="true" name="Codice Prenotazione" type="integer" db:column="codice_prenotazione" db:autoIncrement="true"/>
     <Attribute id="cls1#att6" name="Data Prenotazione" type="timestamp" db:column="data_prenotazione"/>
-    <Attribute id="cls1#att7" name="isAttiva" type="boolean" db:column="isattiva"/>
+    <Attribute id="cls1#att7" name="isAttiva" type="boolean" db:column="isattiva" defaultValue="true"/>
   </Class>
   <!-- ============================================================ -->
   <!-- BACHECA                                                      -->
@@ -213,8 +213,7 @@
     <UserServiceOperation type="update"/>
     <UserServiceOperation type="register"/>
   </UserServices>
-  <db:Database id="dbD1" name="db_wave_event_management" type="PostgreSQL 9 - 12" url="jdbc:postgresql://localhost:5432/wave_eventi" username="postgres" password="YpsLanciaE10AnniFa?" isolation="8" schema="public">
-  </db:Database>
+  <db:Database id="dbD1" name="db_wave_event_management" type="PostgreSQL 9 - 12" url="jdbc:postgresql://localhost:5432/wave_eventi" username="postgres" password="Cupis812-minchia23Cicco" isolation="8" schema="public"/>
   <srs:Resources>
     <srs:AuthService name="Read My Profile" serverResourceName="auth/myProfile" method="read" ref="_identity__me_">
       <srs:AuthServiceOutput name="User ID" serverProperty="userID" ref="_identity__me_$userID" key="true" keyTemplate="{userID?}" location="body" cardinality="1" type="string"/>

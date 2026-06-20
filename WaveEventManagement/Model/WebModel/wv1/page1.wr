@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page1" name="I miei Eventi" gr:x="530" gr:y="405" protected="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page1" name="Homepage" gr:x="530" gr:y="370" protected="false">
   <ViewComponents>
     <List id="wv1#page1#lst3" checkable="false" distinct="false" gr:x="0" gr:y="0" name="I Miei Eventi">
       <SortAttribute classServiceAttribute="WaveEventManagementData$att13" direction="asc"/>
@@ -36,11 +36,17 @@
     </OnSelectEvent>
     <!-- Cerca eventi pubblici -->
     <OnSelectEvent id="wv1#page1#oslte18" name="Cerca Evento Pubblico">
-      <NavigationFlow id="wv1#page1#oslte18#nf38" to="wv1#page13" automaticCoupling="true"/>
+      <NavigationFlow id="wv1#page1#oslte18#nf38" to="wv1#page13#lst9">
+        <ParameterBinding id="wv1#page1#oslte18#nf38#par22" sourceParameter="wv1#page1#prd6" targetParameter="wv1#page13#prd1" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page1#oslte18#nf38#par23" sourceParameter="wv1#page1#prd9" targetParameter="wv1#page13#prd2" name="Username - Username"/>
+      </NavigationFlow>
     </OnSelectEvent>
     <!-- Le Mie Prenotazioni -->
     <OnSelectEvent id="wv1#page1#oslte19" name="Le Mie Prenotazioni">
-      <NavigationFlow id="wv1#page1#oslte19#nf39" to="wv1#page10" automaticCoupling="true"/>
+      <NavigationFlow id="wv1#page1#oslte19#nf39" to="wv1#page10#lst4">
+        <ParameterBinding id="wv1#page1#oslte19#nf39#par35" sourceParameter="wv1#page1#prd6" targetParameter="wv1#page10#prd3" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page1#oslte19#nf39#par36" sourceParameter="wv1#page1#prd9" targetParameter="wv1#page10#prd4" name="Username - Username"/>
+      </NavigationFlow>
     </OnSelectEvent>
     <!-- Cambio Password -->
     <OnSelectEvent id="wv1#page1#oslte100" name="Cambia Password">

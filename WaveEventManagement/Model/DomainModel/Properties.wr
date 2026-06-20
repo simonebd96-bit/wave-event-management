@@ -409,9 +409,9 @@
     </srs:ActionService>
     <srs:ActionService ref="WaveEventManagementData$ada4" refModelId="tlads0#ada4" pid="WaveEventManagementData" name="Prenotazione Evento" defaultSuccessPortDefinition="tlads0#ada4#spd7" defaultErrorPortDefinition="tlads0#ada4#epd6" serverResourceName="actions/prenotazioneEvento" method="create">
       <srs:ServiceScope anonymous="true" method="create"/>
+      <srs:Input ref="WaveEventManagementData$pdp2" refModelId="tlads0#ada4#ipd6#pdp2" pid="WaveEventManagementData" serverProperty="EVENTO2CodiceEventoPrenotazioneToEvento" name="EVENTO_2.Codice Evento(PrenotazioneToEvento)" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="WaveEventManagementData$pdp35" refModelId="tlads0#ada4#ipd6#pdp35" pid="WaveEventManagementData" serverProperty="dataPrenotazione" name="Data Prenotazione" type="timestamp" location="body" cardinality="1"/>
-      <srs:Input ref="WaveEventManagementData$pdp36" refModelId="tlads0#ada4#ipd6#pdp36" pid="WaveEventManagementData" serverProperty="isAttiva" name="isAttiva" type="boolean" location="body" cardinality="1"/>
-      <srs:Input ref="WaveEventManagementData$pdp38" refModelId="tlads0#ada4#ipd6#pdp38" pid="WaveEventManagementData" serverProperty="codiceEvento" name="Codice Evento" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="WaveEventManagementData$pdp7" refModelId="tlads0#ada4#ipd6#pdp7" pid="WaveEventManagementData" serverProperty="userCodiceUserPrenotazioneToUser" name="User.codice_user(PrenotazioneToUser)" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="WaveEventManagementData$ada5" refModelId="tlads0#ada5" pid="WaveEventManagementData" name="Cancellazione Prenotazione" defaultSuccessPortDefinition="tlads0#ada5#spd8" defaultErrorPortDefinition="tlads0#ada5#epd7" serverResourceName="actions/cancellazionePrenotazione" method="create">
       <srs:ServiceScope anonymous="true" method="create"/>

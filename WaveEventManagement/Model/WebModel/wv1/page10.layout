@@ -13,4 +13,7 @@
       </wr-content>
     </wd-data-grid>
   </wr-content>
+   <wr-content for="breadcrumb">
+    {{ 'Benvenuto codice ' + valueOf('main/prd3') + ' utente: ' + valueOf('main/prd4') }}
+  </wr-content>
 </wr-page>

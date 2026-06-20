@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="810" gr:y="640" id="wv1#page10" name="Le Mie Prenotazioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="840" gr:y="650" id="wv1#page10" name="Le Mie Prenotazioni">
   <ViewComponents>
     <List id="wv1#page10#lst4" checkable="false" distinct="false" gr:x="0" gr:y="0" name="Le Mie Prenotazioni">
       <DataBinding classServiceRes="WaveEventManagementData$cls1"/>
@@ -15,7 +15,14 @@
       </NavigationFlow>
     </OnSelectEvent>
     <OnSelectEvent id="wv1#page10#oslte51" name="Torna alla Home">
-      <NavigationFlow id="wv1#page10#oslte51#nf53" to="wv1#page1" automaticCoupling="true"/>
+      <NavigationFlow id="wv1#page10#oslte51#nf53" to="wv1#page1#lst3">
+        <ParameterBinding id="wv1#page10#oslte51#nf53#par33" sourceParameter="wv1#page10#prd3" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page10#oslte51#nf53#par34" sourceParameter="wv1#page10#prd4" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+      </NavigationFlow>
     </OnSelectEvent>
   </Events>
+  <Parameters>
+    <Parameter id="wv1#page10#prd3" name="Codice_Utente" type="integer"/>
+    <Parameter id="wv1#page10#prd4" name="Username" type="string"/>
+  </Parameters>
 </Page>

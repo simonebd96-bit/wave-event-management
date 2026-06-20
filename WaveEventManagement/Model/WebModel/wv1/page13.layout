@@ -1,24 +1,84 @@
 <wr-page>
   <wr-content for="page-content">
-    <wd-data-grid [rows]="valueOf('main/lst9/data')" cols="main/lst9/data/{Attribute}*">
-      <wr-content for="header[_be_att10]">{{ 'Tipo' | wrLocalize }}</wr-content>
-      <wr-content for="data[_be_att10]">{{ valueOf('.', row) }}</wr-content>
-      <wr-content for="header[_be_att11]">{{ labelOf('.') | wrLocalize }}</wr-content>
-      <wr-content for="data[_be_att11]">{{ valueOf('.', row) }}</wr-content>
-      <wr-content for="header[_be_att13]">{{ labelOf('.') | wrLocalize }}</wr-content>
-      <wr-content for="data[_be_att13]">{{ valueOf('.', row) | date:'wr-timestamp' }}</wr-content>
-      <wr-content for="header[_be_att17]">{{ labelOf('.') | wrLocalize }}</wr-content>
-      <wr-content for="data[_be_att17]">{{ valueOf('.', row) }}</wr-content>
-      <wr-content for="header[_be_att16]">{{ labelOf('.') | wrLocalize }}</wr-content>
-      <wr-content for="data[_be_att16]">{{ valueOf('.', row) | number:'wr-decimal' }} €</wr-content>
-      <wr-content for="header[_be_att15]">{{ labelOf('.') | wrLocalize }}</wr-content>
-      <wr-content for="data[_be_att15]">{{ valueOf('.', row) | number:'wr-integer' }}</wr-content>
-      <wr-content for="header-actions">
-        <wd-button context="main/oslte30" iconText="event_available" variant="mat-icon-button"></wd-button>
+    <wd-data-grid cols="main/lst9/data/{Attribute}*" [rows]="valueOf('main/lst9/data')">
+      <wr-content for="header[_be_att11]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att11]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att13]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att13]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att17]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att17]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att16]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att16]">
+        {{ valueOf('.', row) | number:'wr-decimal' }}
+      </wr-content>
+      <wr-content for="header[_be_att15]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att15]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
+      <wr-content for="header[_be_att12]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att12]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att14]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att14]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att18]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att18]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
+      <wr-content for="header[_be_att19]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att19]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att9]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att9]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
       </wr-content>
     </wd-data-grid>
+    <div style="max-width: 400px; margin: 0 auto; padding: 20px;">
+      <h3 style="text-align: center; margin-bottom: 20px; color: #333;">
+        Scegli l'evento da prenotare
+      </h3>
+      <form>
+        <wd-input [showClearIcon]="false" floatLabel="auto" context="model:main/frm4/fld7" [disableAutocompletion]="true"></wd-input>
+        <wd-input [showClearIcon]="false" floatLabel="auto" context="model:main/frm4/fld8" [disableAutocompletion]="true"></wd-input>
+        <div style="display: flex; justify-content: center; margin-top: 15px;">
+          <wd-button context="main/frm4/oslte4" color="primary"></wd-button>
+        </div>
+      </form>
+    </div>
   </wr-content>
   <wr-content for="footer-content">
     <wd-button context="main/oslte31" color="accent"></wd-button>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    {{ 'Benvenuto codice ' + valueOf('main/prd1') + ' utente: ' + valueOf('main/prd2') }}
   </wr-content>
 </wr-page>

@@ -1,6 +1,6 @@
 <wr-page>
   <wr-content for="page-content">
-    <wd-data-grid [rows]="valueOf('main/lst3/data')" cols="main/lst3/data/{Attribute}*">
+    <wd-data-grid [rows]="valueOf('main/lst3/data')" cols="main/lst3/data/{Attribute}*" title="main/lst3">
       <wr-content for="header[_be_att9]">
         {{ labelOf('.') | wrLocalize }}
       </wr-content>
@@ -65,8 +65,24 @@
         <wd-button context="main/oslte160" iconText="edit" variant="mat-icon-button"></wd-button>
         <wd-button context="main/oslte17" iconText="add_circle" variant="mat-icon-button"></wd-button>
       </wr-content>
+      <wr-content for="title[lst3]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_be_att12]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att12]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att102]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att102]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
     </wd-data-grid>
   </wr-content>
+  
   <wr-content for="footer-content">
     <wd-button context="main/oslte18" color="primary"></wd-button>
     <wd-button context="main/oslte19" color="accent"></wd-button>
@@ -76,3 +92,4 @@
   <wr-content for="breadcrumb">
     {{ 'Benvenuto codice ' + valueOf('main/prd6') + ' utente: ' + valueOf('main/prd9') }}
   </wr-content>
+</wr-page>

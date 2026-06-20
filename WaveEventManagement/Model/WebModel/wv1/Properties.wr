@@ -68,7 +68,7 @@
     </Events>
   </Action>
   <!-- Cancella Prenotazione -->
-  <Action id="wv1#act10" name="Cancella Prenotazione" gr:x="1050" gr:y="695" actionServiceRes="WaveEventManagementData$ada5">
+  <Action id="wv1#act10" name="Cancella Prenotazione" gr:x="1065" gr:y="710" actionServiceRes="WaveEventManagementData$ada5">
     <Events>
       <SuccessEvent id="wv1#act10#scce13">
         <NavigationFlow id="wv1#act10#scce13#nf37" to="wv1#page10" automaticCoupling="true"/>
@@ -77,14 +77,15 @@
     </Events>
   </Action>
   <!-- Prenota Evento -->
-  <Action id="wv1#act9" name="Prenota Evento" gr:x="960" gr:y="950" actionServiceRes="WaveEventManagementData$ada4">
+  <Action id="wv1#act9" name="Prenota Evento" gr:x="855" gr:y="915" actionServiceRes="WaveEventManagementData$ada4">
     <Events>
       <SuccessEvent id="wv1#act9#scce12">
-        <NavigationFlow id="wv1#act9#scce12#nf35" to="wv1#page10" automaticCoupling="true"/>
+        <NavigationFlow id="wv1#act9#scce12#nf35" to="wv1#page10#lst4" gr:bendpoints="12,-46,2,119">
+          <ParameterBinding id="wv1#act9#scce12#nf35#par30" sourceParameterBinding="wv1#page13#frm4#oslte4#nf4#par32" targetParameter="wv1#page10#prd3" name="Username - PASSING - Codice_Utente"/>
+          <ParameterBinding id="wv1#act9#scce12#nf35#par31" sourceParameterBinding="wv1#page13#frm4#oslte4#nf4#par29" targetParameter="wv1#page10#prd4" name="Username - PASSING - Username"/>
+        </NavigationFlow>
       </SuccessEvent>
-      <ErrorEvent id="wv1#act9#erre24">
-        <NavigationFlow id="wv1#act9#erre24#nf36" to="wv1#page14" automaticCoupling="true"/>
-      </ErrorEvent>
+      <ErrorEvent id="wv1#act9#erre3"/>
     </Events>
   </Action>
   <!-- Modifica Evento -->
