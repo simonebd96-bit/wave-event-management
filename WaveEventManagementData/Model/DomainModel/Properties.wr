@@ -213,7 +213,7 @@
     <UserServiceOperation type="update"/>
     <UserServiceOperation type="register"/>
   </UserServices>
-  <db:Database id="dbD1" name="db_wave_event_management" type="PostgreSQL 9 - 12" url="jdbc:postgresql://localhost:5432/wave_eventi" username="postgres" isolation="8" schema="public"/>
+  <db:Database id="dbD1" name="db_wave_event_management" type="PostgreSQL 9 - 12" url="jdbc:postgresql://localhost:5432/wave_eventi" username="postgres" isolation="8" schema="public" password="cupiCsaspitaEocuSimpat01-Troce"/>
   <srs:Resources>
     <srs:AuthService name="Read My Profile" serverResourceName="auth/myProfile" method="read" ref="_identity__me_">
       <srs:AuthServiceOutput name="User ID" serverProperty="userID" ref="_identity__me_$userID" key="true" keyTemplate="{userID?}" location="body" cardinality="1" type="string"/>

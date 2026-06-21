@@ -74,7 +74,7 @@
       </h3>
       <form>
         <wd-input [showClearIcon]="false" floatLabel="auto" context="model:main/frm4/fld7" [disableAutocompletion]="true"></wd-input>
-        <wd-input [showClearIcon]="false" floatLabel="auto" context="model:main/frm4/fld8" [disableAutocompletion]="true"></wd-input>
+        <wd-input [showClearIcon]="false" floatLabel="auto" context="model:main/frm4/fld8" [disableAutocompletion]="true" type="datetime-local"></wd-input>
         <div style="display: flex; justify-content: center; margin-top: 15px;">
           <wd-button context="main/frm4/oslte4" color="primary"></wd-button>
         </div>

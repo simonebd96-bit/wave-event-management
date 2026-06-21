@@ -7,14 +7,14 @@
     <Property name="applicationName">WaveEventManagementData</Property>
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
-    <Property name="dbConfigPath">C:\Users\Simone\AppData\Local\Temp\WRDBConfig10431797989535496131.xml</Property>
+    <Property name="dbConfigPath">C:\Users\Simone\AppData\Local\Temp\WRDBConfig12129192172842390062.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\configuration\org.eclipse.osgi\146\0\.cp</Property>
     <Property name="derbySystemHome">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\.metadata\.plugins\com.webratio.commons.db\derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">50821</Property>
+    <Property name="eventSocketPort">53041</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">202606212329</Property>
+    <Property name="generationTime">202606212347</Property>
     <Property name="hostAlwaysAllowed">false</Property>
     <Property name="httpPort">8080</Property>
     <Property name="httpsPort">8080</Property>
@@ -27,7 +27,7 @@
     <Property name="productionMode">false</Property>
     <Property name="projectDir">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\wave-event-management\WaveEventManagementData</Property>
     <Property name="projectName">WaveEventManagementData</Property>
-    <Property name="projectPath">C:\Users\Simone\AppData\Local\Temp\Project5652934843576073883.wr</Property>
+    <Property name="projectPath">C:\Users\Simone\AppData\Local\Temp\Project4370609073188006237.wr</Property>
     <Property name="projectType">DATASERVICE</Property>
     <Property name="projectVersion">0.0.1</Property>
     <Property name="rootModuleName"></Property>
