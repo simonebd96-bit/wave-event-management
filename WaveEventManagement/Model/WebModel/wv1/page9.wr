@@ -56,6 +56,7 @@
             <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par333" source="{wv1#page9#frm13#fld81}value" target="wv1#act8.WaveEventManagementData$pdp25" name="Numero Posti - Numero Posti"/>
             <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par334" source="{wv1#page9#frm13#fld85}value" target="wv1#act8.WaveEventManagementData$pdp27" name="Titolo - Titolo"/>
             <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par347" sourceParameter="wv1#page9#prd7" target="wv1#act8.WaveEventManagementData$pdp11" name="Codice_Utente - Codice_Utente"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par44" source="wv1#page9#prd10" passing="true" name="Username - PASSING"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv1#page9#frm13#oslte90" name="Annulla">

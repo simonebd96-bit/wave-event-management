@@ -39,6 +39,7 @@
       <NavigationFlow id="wv1#page1#oslte18#nf38" to="wv1#page13#lst9">
         <ParameterBinding id="wv1#page1#oslte18#nf38#par22" sourceParameter="wv1#page1#prd6" targetParameter="wv1#page13#prd1" name="Codice_Utente - Codice_Utente"/>
         <ParameterBinding id="wv1#page1#oslte18#nf38#par23" sourceParameter="wv1#page1#prd9" targetParameter="wv1#page13#prd2" name="Username - Username"/>
+        <ParameterBinding id="wv1#page1#oslte18#nf38#par48" sourceParameter="wv1#page1#prd6" target="wv1#page13#lst9#sc4#acond4" name="Codice_Utente - eventi not utente in sessione"/>
       </NavigationFlow>
     </OnSelectEvent>
     <!-- Le Mie Prenotazioni -->

@@ -62,7 +62,11 @@
   <Action id="wv1#act8" name="Creazione Evento" gr:x="965" gr:y="445" actionServiceRes="WaveEventManagementData$ada3">
     <Events>
       <SuccessEvent id="wv1#act8#scce11">
-        <NavigationFlow id="wv1#act8#scce11#nf33" to="wv1#page1" automaticCoupling="true"/>
+        <NavigationFlow id="wv1#act8#scce11#nf33" to="wv1#page1#lst3">
+          <ParameterBinding id="wv1#act8#scce11#nf33#par43" sourceParameter="wv1#page1#prd6" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+          <ParameterBinding id="wv1#act8#scce11#nf33#par45" sourceParameterBinding="wv1#page9#frm13#oslte16#nf31#par44" targetParameter="wv1#page1#prd9" name="Username - PASSING - Username"/>
+          <ParameterBinding id="wv1#act8#scce11#nf33#par46" sourceParameter="wv1#page1#prd6" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+        </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv1#act8#erre23"/>
     </Events>

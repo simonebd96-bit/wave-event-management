@@ -1,6 +1,6 @@
 <wr-page>
   <wr-content for="page-content">
-    <wd-data-grid cols="main/lst9/data/{Attribute}*" [rows]="valueOf('main/lst9/data')">
+    <wd-data-grid [rows]="valueOf('main/lst9/data')" cols="main/lst9/data/{Attribute}*">
       <wr-content for="header[_be_att11]">
         {{ labelOf('.') | wrLocalize }}
       </wr-content>
@@ -59,6 +59,12 @@
         {{ labelOf('.') | wrLocalize }}
       </wr-content>
       <wr-content for="data[_be_att9]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
+      <wr-content for="header[_be_att102]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att102]">
         {{ valueOf('.', row) | number:'wr-integer' }}
       </wr-content>
     </wd-data-grid>
