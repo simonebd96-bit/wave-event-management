@@ -1,20 +1,111 @@
 <ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada4" name="Prenotazione Evento" defaultSuccessPortDefinition="tlads0#ada4#spd7" defaultErrorPortDefinition="tlads0#ada4#epd6" transaction="true">
   <InputPortDefinition id="tlads0#ada4#ipd6" gr:x="0" gr:y="30">
-    <SuccessFlow id="tlads0#ada4#ipd6#sf23" to="tlads0#ada4#svu5">
-      <ParameterBinding id="tlads0#ada4#ipd6#sf23#par35" source="tlads0#ada4#ipd6#pdp35" target="tlads0#ada4#svu5.cls1#att6" name="Data Prenotazione - Data Prenotazione"/>
-      <ParameterBinding id="tlads0#ada4#ipd6#sf23#par38" source="tlads0#ada4#ipd6#pdp2" target="tlads0#ada4#svu5.as2#role3.cls2#att9" name="Codice Evento - Prenotazione.Evento"/>
-      <ParameterBinding id="tlads0#ada4#ipd6#sf23#par39" target="tlads0#ada4#svu5.as1#role2.userOID" name="User ID - Prenotazione.User" source="tlads0#ada4#ipd6#pdp7"/>
-    </SuccessFlow>
     <PortDefinitionParameter id="tlads0#ada4#ipd6#pdp35" array="false" name="Data Prenotazione" type="timestamp"/>
     <PortDefinitionParameter id="tlads0#ada4#ipd6#pdp2" array="false" name="EVENTO_2.Codice Evento(PrenotazioneToEvento)" type="integer"/>
     <PortDefinitionParameter id="tlads0#ada4#ipd6#pdp7" array="false" name="User.codice_user(PrenotazioneToUser)" type="integer"/>
+    <DataFlow id="tlads0#ada4#ipd6#df2" to="tlads0#ada4#seu1">
+      <ParameterBinding id="tlads0#ada4#ipd6#df2#par44" source="tlads0#ada4#ipd6#pdp2" target="tlads0#ada4#seu1#sc1#kcond1.cls2#att9" name="EVENTO_2.Codice Evento(PrenotazioneToEvento) - codice_evento [Codice Evento]"/>
+    </DataFlow>
+    <DataFlow id="tlads0#ada4#ipd6#df3" to="tlads0#ada4#seu3">
+      <ParameterBinding id="tlads0#ada4#ipd6#df3#par45" source="tlads0#ada4#ipd6#pdp7" target="tlads0#ada4#seu3#sc2#kcond2.userOID" name="User.codice_user(PrenotazioneToUser) - codice_utente [codice_user]"/>
+    </DataFlow>
+    <DataFlow id="tlads0#ada4#ipd6#df5" to="tlads0#ada4#svu2">
+      <ParameterBinding id="tlads0#ada4#ipd6#df5#par51" source="tlads0#ada4#ipd6#pdp7" target="tlads0#ada4#svu2#sc3#kcond3.userOID" name="User.codice_user(PrenotazioneToUser) - user [codice_user]"/>
+    </DataFlow>
+    <DataFlow id="tlads0#ada4#ipd6#df7" to="tlads0#ada4#svu3">
+      <ParameterBinding id="tlads0#ada4#ipd6#df7#par53" source="tlads0#ada4#ipd6#pdp2" target="tlads0#ada4#svu3#sc4#kcond4.cls2#att9" name="EVENTO_2.Codice Evento(PrenotazioneToEvento) - evento [Codice Evento]"/>
+    </DataFlow>
+    <DataFlow id="tlads0#ada4#ipd6#df8" to="tlads0#ada4#svu5">
+      <ParameterBinding id="tlads0#ada4#ipd6#df8#par54" source="tlads0#ada4#ipd6#pdp35" target="tlads0#ada4#svu5.cls1#att6" name="Data Prenotazione - Data Prenotazione"/>
+      <ParameterBinding id="tlads0#ada4#ipd6#df8#par55" source="tlads0#ada4#ipd6#pdp2" target="tlads0#ada4#svu5.as2#role3.cls2#att9" name="EVENTO_2.Codice Evento(PrenotazioneToEvento) - EVENTO_2.Codice Evento(PrenotazioneToEvento)"/>
+      <ParameterBinding id="tlads0#ada4#ipd6#df8#par56" source="tlads0#ada4#ipd6#pdp7" target="tlads0#ada4#svu5.as1#role2.userOID" name="User.codice_user(PrenotazioneToUser) - User.codice_user(PrenotazioneToUser)"/>
+    </DataFlow>
+    <SuccessFlow id="tlads0#ada4#ipd6#sf15" to="tlads0#ada4#seu3"/>
   </InputPortDefinition>
   <SuccessPortDefinition id="tlads0#ada4#spd7" name="Success Port" gr:x="0" gr:y="30"/>
   <ErrorPortDefinition id="tlads0#ada4#epd6" name="Error Port" gr:x="0" gr:y="300"/>
   <Operations>
-    <Save gr:x="525" gr:y="165" id="tlads0#ada4#svu5" action="create" name="Crea Prenotazione" dataBinding="cls1" skipBlankRecords="true">
-      <SuccessFlow id="tlads0#ada4#svu5#sf24" to="tlads0#ada4#spd7" automaticCoupling="true"/>
+    <Save gr:x="1070" gr:y="10" id="tlads0#ada4#svu5" action="create" name="Crea Prenotazione" dataBinding="cls1" skipBlankRecords="true">
+      <SuccessFlow id="tlads0#ada4#svu5#sf24" to="tlads0#ada4#spd7"/>
       <ErrorFlow id="tlads0#ada4#svu5#ef5" to="tlads0#ada4#epd6" automaticCoupling="true"/>
+    </Save>
+    <Selector gr:x="385" gr:y="455" id="tlads0#ada4#seu1" dataBinding="cls2" name="Query posti e costo Evento">
+      <ConditionalExpression id="tlads0#ada4#seu1#sc1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="tlads0#ada4#seu1#sc1#kcond1" name="codice_evento" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada4#seu1#sf18" to="tlads0#ada4#scu1"/>
+      <DataFlow id="tlads0#ada4#seu1#df11" to="tlads0#ada4#scu1">
+        <ParameterBinding id="tlads0#ada4#seu1#df11#par72" source="cls2#att16Array" target="tlads0#ada4#scu1#sci2" name="Costo Evento - inCosto  "/>
+        <ParameterBinding id="tlads0#ada4#seu1#df11#par73" source="cls2#att15Array" target="tlads0#ada4#scu1#sci3" name="Numero Posti - inPosti"/>
+        <ParameterBinding id="tlads0#ada4#seu1#df11#par75" sourceParameterBinding="tlads0#ada4#seu3#sf16#par74" target="tlads0#ada4#scu1#sci1" name="saldo_wallet - PASSING - inWallet"/>
+      </DataFlow>
+    </Selector>
+    <Selector gr:x="470" gr:y="280" id="tlads0#ada4#seu3" dataBinding="User" name="Disponibilit&#224; Wallet">
+      <ConditionalExpression id="tlads0#ada4#seu3#sc2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="tlads0#ada4#seu3#sc2#kcond2" name="codice_utente" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada4#seu3#sf16" to="tlads0#ada4#seu1">
+        <ParameterBinding id="tlads0#ada4#seu3#sf16#par74" source="User#att30Array" passing="true" name="saldo_wallet - PASSING"/>
+      </SuccessFlow>
+    </Selector>
+    <Script gr:x="680" gr:y="380" id="tlads0#ada4#scu1" name="Codice Aggiorna wallet e posti">
+      <ScriptInput id="tlads0#ada4#scu1#sci1" name="inWallet"/>
+      <ScriptInput id="tlads0#ada4#scu1#sci2" name="inCosto  "/>
+      <ScriptInput id="tlads0#ada4#scu1#sci3" name="inPosti"/>
+      <ScriptText xml:space="preserve">System.out.println("--- DEBUG ACTION PRENOTAZIONE ---");
+System.out.println("Wallet estratto: " + inWallet);
+// Se inCosto &#232; NULL, il problema &#232; il DataFlow che arriva da seu1
+System.out.println("Costo Evento estratto: " + (inCosto == null ? "NON ARRIVATO!" : inCosto));
+System.out.println("Posti rimasti: " + (inPosti == null ? "NON ARRIVATO!" : inPosti));
+
+// ... qui sotto lasci il resto del codice che fa i controlli ...
+// Controlli di blocco
+if (inPosti == null || inPosti &lt;= 0) {
+    return ["esito": "KO", "motivo": "Posti esauriti"];
+}
+if (inWallet == null || inCosto == null || inWallet &lt; inCosto) {
+    return ["esito": "KO", "motivo": "Fondi insufficienti"];
+}
+
+// Se supera i controlli, esegue i calcoli
+def nuovoWallet = inWallet - inCosto;
+def nuoviPosti = inPosti - 1;
+
+return [
+    "esito": "OK", 
+    "nuovoWallet": nuovoWallet, 
+    "nuoviPosti": nuoviPosti
+];</ScriptText>
+      <SuccessFlow id="tlads0#ada4#scu1#sf11" to="tlads0#ada4#switch1">
+        <ParameterBinding id="tlads0#ada4#scu1#sf11#par49" source="result(esito)" target="tlads0#ada4#switch1.switch" name="Result - Switch"/>
+      </SuccessFlow>
+      <DataFlow id="tlads0#ada4#scu1#df4" to="tlads0#ada4#svu2">
+        <ParameterBinding id="tlads0#ada4#scu1#df4#par50" source="result(nuovoWallet)" target="tlads0#ada4#svu2.User#att30" name="Result - saldo_wallet"/>
+      </DataFlow>
+      <ScriptOutput id="tlads0#ada4#scu1#sco1" name="esito"/>
+      <ScriptOutput id="tlads0#ada4#scu1#sco2" name="nuovoWallet"/>
+      <ScriptOutput id="tlads0#ada4#scu1#sco3" name="nuoviPosti"/>
+      <DataFlow id="tlads0#ada4#scu1#df6" to="tlads0#ada4#svu3">
+        <ParameterBinding id="tlads0#ada4#scu1#df6#par52" source="result(nuoviPosti)" target="tlads0#ada4#svu3.cls2#att15" name="nuoviPosti - Numero Posti"/>
+      </DataFlow>
+    </Script>
+    <Switch gr:x="945" gr:y="375" id="tlads0#ada4#switch1" name="Switch 1">
+      <Case value="OK"/>
+      <Case value="KO"/>
+      <SuccessFlow id="tlads0#ada4#switch1#sf12" to="tlads0#ada4#epd6" code="KO"/>
+      <SuccessFlow id="tlads0#ada4#switch1#sf27" to="tlads0#ada4#svu2" code="OK" gr:bendpoints="-148.0 -62.0"/>
+    </Switch>
+    <Save gr:x="635" gr:y="155" id="tlads0#ada4#svu2" action="update" name="Aggiorna User" dataBinding="User">
+      <ConditionalExpression id="tlads0#ada4#svu2#sc3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="tlads0#ada4#svu2#sc3#kcond3" name="user" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada4#svu2#sf20" to="tlads0#ada4#svu3"/>
+    </Save>
+    <Save gr:x="800" gr:y="65" id="tlads0#ada4#svu3" action="update" name="Aggiorna Evento" dataBinding="cls2">
+      <ConditionalExpression id="tlads0#ada4#svu3#sc4" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="tlads0#ada4#svu3#sc4#kcond4" name="evento" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada4#svu3#sf23" to="tlads0#ada4#svu5"/>
     </Save>
   </Operations>
 </ActionDefinition>

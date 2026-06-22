@@ -7,14 +7,14 @@
     <Property name="applicationName">WaveEventManagementData</Property>
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
-    <Property name="dbConfigPath">C:\Users\Simone\AppData\Local\Temp\WRDBConfig16569964148853512355.xml</Property>
+    <Property name="dbConfigPath">C:\Users\Simone\AppData\Local\Temp\WRDBConfig1993456466754264709.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\configuration\org.eclipse.osgi\146\0\.cp</Property>
     <Property name="derbySystemHome">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\.metadata\.plugins\com.webratio.commons.db\derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">54024</Property>
+    <Property name="eventSocketPort">58943</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">202606221003</Property>
+    <Property name="generationTime">202606222321</Property>
     <Property name="hostAlwaysAllowed">false</Property>
     <Property name="httpPort">8080</Property>
     <Property name="httpsPort">8080</Property>
@@ -27,7 +27,7 @@
     <Property name="productionMode">false</Property>
     <Property name="projectDir">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\wave-event-management\WaveEventManagementData</Property>
     <Property name="projectName">WaveEventManagementData</Property>
-    <Property name="projectPath">C:\Users\Simone\AppData\Local\Temp\Project2615994787625238013.wr</Property>
+    <Property name="projectPath">C:\Users\Simone\AppData\Local\Temp\Project2648169529199181877.wr</Property>
     <Property name="projectType">DATASERVICE</Property>
     <Property name="projectVersion">0.0.1</Property>
     <Property name="rootModuleName"></Property>
@@ -35,7 +35,7 @@
     <Property name="uiPluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\plugins\com.webratio.ide.ui_9.3.2.202604291841</Property>
     <Property name="webappPluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\plugins\com.webratio.generator.webapp_9.3.2.202604291841</Property>
     <Property name="wrBuildId">202604291841</Property>
-    <Property name="wrModelStatistics">components=10|pages=0</Property>
+    <Property name="wrModelStatistics">components=16|pages=0</Property>
     <Property name="wrVersion">9.3.2</Property>
     <Property name="authenticationServerBaseUrl">/wr-auth</Property>
     <Property name="appId">WaveEventManagementData</Property>
