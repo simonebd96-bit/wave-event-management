@@ -18,6 +18,7 @@
       <NavigationFlow id="wv1#page10#oslte51#nf53" to="wv1#page1#lst3">
         <ParameterBinding id="wv1#page10#oslte51#nf53#par33" sourceParameter="wv1#page10#prd3" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
         <ParameterBinding id="wv1#page10#oslte51#nf53#par34" sourceParameter="wv1#page10#prd4" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+        <ParameterBinding id="wv1#page10#oslte51#nf53#par49" sourceParameter="wv1#page10#prd3" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
       </NavigationFlow>
     </OnSelectEvent>
   </Events>

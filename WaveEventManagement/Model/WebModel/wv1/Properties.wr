@@ -84,10 +84,7 @@
   <Action id="wv1#act9" name="Prenota Evento" gr:x="855" gr:y="915" actionServiceRes="WaveEventManagementData$ada4">
     <Events>
       <SuccessEvent id="wv1#act9#scce12">
-        <NavigationFlow id="wv1#act9#scce12#nf35" to="wv1#page10#lst4" gr:bendpoints="12,-46,2,119">
-          <ParameterBinding id="wv1#act9#scce12#nf35#par30" sourceParameterBinding="wv1#page13#frm4#oslte4#nf4#par32" targetParameter="wv1#page10#prd3" name="Username - PASSING - Codice_Utente"/>
-          <ParameterBinding id="wv1#act9#scce12#nf35#par31" sourceParameterBinding="wv1#page13#frm4#oslte4#nf4#par29" targetParameter="wv1#page10#prd4" name="Username - PASSING - Username"/>
-        </NavigationFlow>
+        <NavigationFlow id="wv1#act9#scce12#nf35" to="wv1#page10#lst4" gr:bendpoints="12,-46,2,119"/>
       </SuccessEvent>
       <ErrorEvent id="wv1#act9#erre3"/>
     </Events>
