@@ -35,7 +35,7 @@
     </Events>
   </Action>
   <!-- Registrazione Utente -->
-  <Action id="wv1#act4" gr:x="280" gr:y="460" actionServiceRes="WaveEventManagementData$ada1">
+  <Action id="wv1#act4" gr:x="265" gr:y="460" actionServiceRes="WaveEventManagementData$ada1">
     <Events>
       <SuccessEvent id="wv1#act4#scce8">
         <NavigationFlow id="wv1#act4#scce8#nf23" to="wv1#page6#frm11" automaticCoupling="true"/>
