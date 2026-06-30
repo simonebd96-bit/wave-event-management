@@ -1,0 +1,53 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card>
+      <wr-content for="content">
+        <wd-container elements="main/frm13/{Field}*">
+          <wr-content for="element[fld85]">
+            <wd-input type="text" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld79]">
+            <wd-input type="text" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld87]">
+            <wd-input type="datetime-local" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld86]">
+            <wd-input type="datetime-local" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld83]">
+            <wd-input type="text" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld81]">
+            <wd-input type="number" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld80]">
+            <wd-input type="decimal" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld82]">
+            <wd-input type="number" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld88]">
+            <wd-input type="text" [showLabel]="true"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld84]">
+            <wd-input type="datetime-local" [showLabel]="true"></wd-input>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="footer-content">
+    <wd-button context="main/frm13/oslte16" color="primary"></wd-button>
+    <wd-button context="main/frm13/oslte90" color="accent"></wd-button>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    {{ 'Benvenuto codice ' + valueOf('main/prd7') + '. utente: ' + valueOf('main/prd10') }}
+  </wr-content>
+  <wr-content for="brand">
+    <wd-image staticImage="assets/WebDefault/images/webratio-logo.png"></wd-image>
+  </wr-content>
+  <wr-content for="menu">
+    {{ 'EVENT MANAGEMENT SYSTEM -  W e a v e ' | wrLocalize }}
+  </wr-content>
+</wr-page>

@@ -1,0 +1,47 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada7" name="Cambio Password Derby" defaultSuccessPortDefinition="tlads0#ada7#spd10" defaultErrorPortDefinition="tlads0#ada7#epd10" transaction="true">
+  <InputPortDefinition id="tlads0#ada7#ipd10" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ada7#ipd10#sf40" to="tlads0#ada7#seu10">
+      <ParameterBinding id="tlads0#ada7#ipd10#sf40#par80" source="tlads0#ada7#ipd10#pdp80" target="tlads0#ada7#seu10#sc10#acond10" name="Username - Username"/>
+      <ParameterBinding id="tlads0#ada7#ipd10#sf40#par81" source="tlads0#ada7#ipd10#pdp81" target="tlads0#ada7#seu10#sc10#acond11" name="Vecchia Password - Vecchia Password"/>
+      <ParameterBinding id="tlads0#ada7#ipd10#sf40#par82" source="tlads0#ada7#ipd10#pdp82" passing="true" name="Nuova Password - PASSING"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ada7#ipd10#pdp80" array="false" name="Username" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada7#ipd10#pdp81" array="false" name="Vecchia Password" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada7#ipd10#pdp82" array="false" name="Nuova Password" type="string"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ada7#spd10" name="Success Port" gr:x="0" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ada7#epd10" name="Error Port" gr:x="0" gr:y="300"/>
+  <Operations>
+    <!-- Step 1: Selector verifica username + vecchia password -->
+    <Selector gr:x="350" gr:y="160" id="tlads0#ada7#seu10" dataBinding="User" distinctAttributes="userOID userName User#att31" maxResults="1">
+      <ConditionalExpression id="tlads0#ada7#seu10#sc10" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="tlads0#ada7#seu10#sc10#acond10" name="Username" predicate="eq" implied="true" attributes="userName" booleanOperator="and"/>
+        <AttributesCondition id="tlads0#ada7#seu10#sc10#acond11" name="Vecchia Password" predicate="eq" implied="true" attributes="User#att31"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada7#seu10#sf41" to="tlads0#ada7#switch10">
+        <ParameterBinding id="tlads0#ada7#seu10#sf41#par85" source="dataSize" target="tlads0#ada7#switch10.switch" name="Data Size - Switch"/>
+        <ParameterBinding id="tlads0#ada7#seu10#sf41#par83" source="userOIDArray" passing="true" name="codice_user - PASSING"/>
+        <!-- Passa la nuova password attraverso il Selector come PASSING per renderla disponibile nel Switch -->
+        <ParameterBinding id="tlads0#ada7#seu10#sf41#par87" sourceParameterBinding="tlads0#ada7#ipd10#sf40#par82" passing="true" name="Nuova Password - PASSING 2"/>
+      </SuccessFlow>
+    </Selector>
+    <!-- Step 2: Switch su dataSize -->
+    <Switch gr:x="530" gr:y="185" id="tlads0#ada7#switch10" name="Switch Verifica Password">
+      <SuccessFlow id="tlads0#ada7#switch10#sf42" to="tlads0#ada7#svu10" code="1">
+        <ParameterBinding id="tlads0#ada7#switch10#sf42#par84" sourceParameterBinding="tlads0#ada7#seu10#sf41#par83" target="tlads0#ada7#svu10#sc11#acond12" name="codice_user - Codice User"/>
+        <ParameterBinding id="tlads0#ada7#switch10#sf42#par86" sourceParameterBinding="tlads0#ada7#seu10#sf41#par87" target="tlads0#ada7#svu10.User#att31" name="Nuova Password - PASSWORD"/>
+      </SuccessFlow>
+      <SuccessFlow id="tlads0#ada7#switch10#sf43" to="tlads0#ada7#epd10" automaticCoupling="true" code="0"/>
+      <Case value="1"/>
+      <Case value="0"/>
+    </Switch>
+    <!-- Step 3: aggiorna password -->
+    <Save gr:x="730" gr:y="160" id="tlads0#ada7#svu10" action="update" name="Aggiorna Password" dataBinding="User" skipBlankRecords="false">
+      <ConditionalExpression id="tlads0#ada7#svu10#sc11" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="tlads0#ada7#svu10#sc11#acond12" name="Codice User" predicate="eq" implied="true" attributes="userOID"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada7#svu10#sf44" to="tlads0#ada7#spd10" automaticCoupling="true"/>
+      <ErrorFlow id="tlads0#ada7#svu10#ef10" to="tlads0#ada7#epd10" automaticCoupling="true"/>
+    </Save>
+  </Operations>
+</ActionDefinition>

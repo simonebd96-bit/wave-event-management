@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="wv1#page3" name="Sign in" gr:x="60" gr:y="-5" inheritedAbstractPagesManual="true" layout:pageTemplate="WebDefault/Login">
+  <ViewComponents>
+    <Form id="wv1#page3#frm2" name="Sign in" gr:x="0" gr:y="85">
+      <Events>
+        <OnSelectEvent id="wv1#page3#frm2#oslte2" name="Sign in" validate="true">
+          <NavigationFlow id="wv1#page3#frm2#oslte2#nf6" to="wv1#act2">
+            <ParameterBinding id="wv1#page3#frm2#oslte2#nf6#par15" source="{wv1#page3#frm2#fld4}value" target="wv1#act2.tlads0#ad2#ipd2#pdp4" name="Username - Username"/>
+            <ParameterBinding id="wv1#page3#frm2#oslte2#nf6#par16" source="{wv1#page3#frm2#fld5}value" target="wv1#act2.tlads0#ad2#ipd2#pdp5" name="Password - Password"/>
+            <ParameterBinding id="wv1#page3#frm2#oslte2#nf6#par17" source="{wv1#page3#frm2#fld6}value" target="wv1#act2.tlads0#ad2#ipd2#pdp6" name="Remember Me - Remember Me"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#page3#frm2#fld4" name="Username" type="string" modifiable="true" validationOrder="wv1#page3#frm2#fld4#mnd40">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page3#frm2#fld4#mnd40" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page3#frm2#fld5" name="Password" type="password" modifiable="true" validationOrder="wv1#page3#frm2#fld5#mnd50">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page3#frm2#fld5#mnd50" name="Mandatory"/>
+          <PasswordStrengthValidationRule id="wv1#page3#frm2#fld5#psvr11" name="password strength" securityLevel="medium"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page3#frm2#fld6" name="Remember Me" type="boolean" modifiable="true">
+        <VRules/>
+      </Field>
+    </Form>
+    <Message id="wv1#page3#msg3" name="Sign in error" gr:x="0" gr:y="0">
+      <Events/>
+    </Message>
+  </ViewComponents>
+</Page>

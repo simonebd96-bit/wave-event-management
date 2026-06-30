@@ -1,0 +1,55 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="wv1#page2" name="Change password" gr:x="285" gr:y="65" protected="false" layout:pageTemplate="WebDefault/Login">
+  <!--
+    MODIFICA #4: aggiunto tasto per tornare alla home
+    MODIFICA #5: usa l'action ada7 (Cambio Password Derby) che verifica la vecchia password sul DB
+  -->
+  <ViewComponents>
+    <Form id="wv1#page2#frm1" name="Change password" gr:x="20" gr:y="95">
+      <Events>
+        <!-- MODIFICA #5: chiama act12 (Cambio Password Derby con verifica vecchia password) -->
+        <OnSelectEvent id="wv1#page2#frm1#oslte1" name="Change password" validate="true">
+          <NavigationFlow id="wv1#page2#frm1#oslte1#nf3" to="wv1#act12">
+            <ParameterBinding id="wv1#page2#frm1#oslte1#nf3#par5" source="{wv1#page2#frm1#fld2}value" target="wv1#act12.WaveEventManagementData$pdp82" name="nuova password - Nuova password"/>
+            <ParameterBinding id="wv1#page2#frm1#oslte1#nf3#par6" source="{wv1#page2#frm1#fld1}value" target="wv1#act12.WaveEventManagementData$pdp81" name="vecchia password - Vecchia password"/>
+            <ParameterBinding id="wv1#page2#frm1#oslte1#nf3#par7" sourceParameter="wv1#page2#prd20" target="wv1#act12.WaveEventManagementData$pdp80" name="Username - Username"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <!-- MODIFICA #4: tasto per tornare alla home -->
+        <OnSelectEvent id="wv1#page2#frm1#oslte200a" name="Torna alla Home" validate="false">
+          <NavigationFlow id="wv1#page2#frm1#oslte200a#nf40a" to="wv1#page1#lst3">
+            <ParameterBinding id="wv1#page2#frm1#oslte200a#nf40a#par470" sourceParameter="wv1#page2#prd21" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+            <ParameterBinding id="wv1#page2#frm1#oslte200a#nf40a#par471" sourceParameter="wv1#page2#prd20" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+            <ParameterBinding id="wv1#page2#frm1#oslte200a#nf40a#par472" sourceParameter="wv1#page2#prd21" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#page2#frm1#fld1" name="vecchia password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page2#frm1#fld1#mnd10" name="mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page2#frm1#fld2" name="nuova password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page2#frm1#fld2#mnd20" name="mandatory"/>
+          <CompareValidationRule id="wv1#page2#frm1#fld2#cmp1" name="not equal current password" predicate="neq" valueField="wv1#page2#frm1#fld1"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page2#frm1#fld3" name="conferma nuova password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page2#frm1#fld3#mnd30" name="mandatory"/>
+          <CompareValidationRule id="wv1#page2#frm1#fld3#cmp2" name="equal to new password" predicate="eq" valueField="wv1#page2#frm1#fld2"/>
+        </VRules>
+      </Field>
+    </Form>
+    <Message id="wv1#page2#msg1" name="Error" gr:x="95" gr:y="0">
+      <Events/>
+    </Message>
+    <Message id="wv1#page2#msg2" name="Info" gr:x="0" gr:y="0">
+      <Events/>
+    </Message>
+  </ViewComponents>
+  <Parameters>
+    <Parameter id="wv1#page2#prd20" name="Username" type="string" preserve="true"/>
+    <Parameter id="wv1#page2#prd21" name="Codice_Utente" type="integer"/>
+  </Parameters>
+</Page>

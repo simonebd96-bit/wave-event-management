@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="10" gr:y="670" id="wv1#page6" name="LoginDerby">
+  <ViewComponents>
+    <Message id="wv1#page6#msg60" name="Errore Login" gr:x="0" gr:y="0">
+      <Events/>
+    </Message>
+    <Form gr:x="0" gr:y="80" id="wv1#page6#frm11" name="loginDerby">
+      <DataBinding classServiceRes="WaveEventManagementData$User"/>
+      <Field id="wv1#page6#frm11#fld66" modifiable="true" name="Username" type="string">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page6#frm11#fld66#mnd60" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$userName"/>
+      </Field>
+      <Field id="wv1#page6#frm11#fld67" modifiable="true" name="Password" type="password">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page6#frm11#fld67#mnd61" name="mandatory"/>
+        </VRules>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att31"/>
+      </Field>
+      <DataFlow id="wv1#page6#frm11#df2" to="wv1#act7" name="login" gr:bendpoints="140,-5,-134,76">
+        <ParameterBinding id="wv1#page6#frm11#df2#par105" source="{wv1#page6#frm11#fld67}value" target="wv1#act7.WaveEventManagementData$pdp20" name="Password - Password"/>
+        <ParameterBinding id="wv1#page6#frm11#df2#par106" source="{wv1#page6#frm11#fld66}value" target="wv1#act7.WaveEventManagementData$pdp21" name="Username - Username"/>
+      </DataFlow>
+      <Events>
+        <OnSelectEvent id="wv1#page6#frm11#oslte11" name="login" validate="true">
+          <NavigationFlow id="wv1#page6#frm11#oslte11#nf25" to="wv1#act7" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#page6#frm11#oslte12" name="registrati" validate="false">
+          <NavigationFlow id="wv1#page6#frm11#oslte12#nf26" to="wv1#page4" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

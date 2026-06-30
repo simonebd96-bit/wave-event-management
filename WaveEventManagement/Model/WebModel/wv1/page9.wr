@@ -1,0 +1,77 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1090" gr:y="170" id="wv1#page9" name="Creazione Evento">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv1#page9#frm13" name="Creazione Evento">
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <Field id="wv1#page9#frm13#fld85" modifiable="true" name="Titolo" type="string">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att11"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld79" modifiable="true" name="Descrizione" type="string">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att19"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld87" modifiable="true" name="Data Inizio" type="timestamp">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att13"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld86" modifiable="true" name="Data Fine" type="timestamp">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att14"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld83" modifiable="true" name="Luogo" type="string">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att17"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld81" modifiable="true" name="Numero Posti" type="integer">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att15"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld80" modifiable="true" name="Costo Evento" type="decimal">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att16"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld82" modifiable="true" name="Eta Minima" type="integer">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att18"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld88" modifiable="true" name="isPubblico" type="string">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att10"/>
+      </Field>
+      <Field id="wv1#page9#frm13#fld84" modifiable="true" name="Data Creazione" type="timestamp">
+        <VRules/>
+        <ValueAttribute classServiceAttribute="WaveEventManagementData$att12"/>
+      </Field>
+      <Events>
+        <OnSelectEvent id="wv1#page9#frm13#oslte16" name="Crea" validate="true">
+          <NavigationFlow id="wv1#page9#frm13#oslte16#nf31" to="wv1#act8">
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par325" source="{wv1#page9#frm13#fld80}value" target="wv1#act8.WaveEventManagementData$pdp28" name="Costo Evento - Costo Evento"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par326" source="{wv1#page9#frm13#fld84}value" target="wv1#act8.WaveEventManagementData$pdp24" name="Data Creazione - Data Creazione"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par327" source="{wv1#page9#frm13#fld86}value" target="wv1#act8.WaveEventManagementData$pdp23" name="Data Fine - Data Fine"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par328" source="{wv1#page9#frm13#fld87}value" target="wv1#act8.WaveEventManagementData$pdp32" name="Data Inizio - Data Inizio"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par329" source="{wv1#page9#frm13#fld79}value" target="wv1#act8.WaveEventManagementData$pdp31" name="Descrizione - Descrizione"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par330" source="{wv1#page9#frm13#fld82}value" target="wv1#act8.WaveEventManagementData$pdp30" name="Eta Minima - Eta Minima"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par331" source="{wv1#page9#frm13#fld88}value" target="wv1#act8.WaveEventManagementData$pdp29" name="isPubblico - isPubblico"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par332" source="{wv1#page9#frm13#fld83}value" target="wv1#act8.WaveEventManagementData$pdp26" name="Luogo - Luogo"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par333" source="{wv1#page9#frm13#fld81}value" target="wv1#act8.WaveEventManagementData$pdp25" name="Numero Posti - Numero Posti"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par334" source="{wv1#page9#frm13#fld85}value" target="wv1#act8.WaveEventManagementData$pdp27" name="Titolo - Titolo"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par347" sourceParameter="wv1#page9#prd7" target="wv1#act8.WaveEventManagementData$pdp11" name="Codice_Utente"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par355" sourceParameter="wv1#page9#prd10" passing="true" name="Username - PASSING"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte16#nf31#par350" sourceParameter="wv1#page9#prd7" passing="true" name="Codice_Utente - PASSING"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#page9#frm13#oslte90" name="Annulla">
+          <NavigationFlow id="wv1#page9#frm13#oslte90#nf32" to="wv1#page1#lst3">
+            <ParameterBinding id="wv1#page9#frm13#oslte90#nf32#par24" sourceParameter="wv1#page9#prd7" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte90#nf32#par26" sourceParameter="wv1#page9#prd10" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+            <ParameterBinding id="wv1#page9#frm13#oslte90#nf32#par52" sourceParameter="wv1#page9#prd7" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+  <Parameters>
+    <Parameter id="wv1#page9#prd7" name="Codice_Utente" type="integer"/>
+    <Parameter id="wv1#page9#prd10" name="Username" type="string"/>
+  </Parameters>
+</Page>

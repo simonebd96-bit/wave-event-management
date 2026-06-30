@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+  <Properties>
+    <Property name="ajaxActivated">true</Property>
+    <Property name="applicationId">WaveEventManagementData</Property>
+    <Property name="applicationName">WaveEventManagementData</Property>
+    <Property name="applicationServer">Tomcat</Property>
+    <Property name="cloudDeploy">false</Property>
+    <Property name="dbConfigPath">C:\Users\Simone\AppData\Local\Temp\WRDBConfig170134347516626350.xml</Property>
+    <Property name="defaultEncoding"></Property>
+    <Property name="deployCorePluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\configuration\org.eclipse.osgi\146\0\.cp</Property>
+    <Property name="derbySystemHome">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\.metadata\.plugins\com.webratio.commons.db\derby</Property>
+    <Property name="enterpriseProjectDir"></Property>
+    <Property name="eventSocketPort">55488</Property>
+    <Property name="excludedProjects" type="list"></Property>
+    <Property name="generationTime">202606302056</Property>
+    <Property name="hostAlwaysAllowed">false</Property>
+    <Property name="httpPort">8080</Property>
+    <Property name="httpsPort">8080</Property>
+    <Property name="i18nBundleKeysFile" type="file"></Property>
+    <Property name="i18nExtraBundleFile" type="file"></Property>
+    <Property name="lockDir">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\wave-event-management\WaveEventManagementData\.Temp~</Property>
+    <Property name="normalizeDescriptors">false</Property>
+    <Property name="outputPath">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData</Property>
+    <Property name="phases">All</Property>
+    <Property name="productionMode">false</Property>
+    <Property name="projectDir">C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\wave-event-management\WaveEventManagementData</Property>
+    <Property name="projectName">WaveEventManagementData</Property>
+    <Property name="projectPath">C:\Users\Simone\AppData\Local\Temp\Project14144331888866744842.wr</Property>
+    <Property name="projectType">DATASERVICE</Property>
+    <Property name="projectVersion">0.0.1</Property>
+    <Property name="rootModuleName"></Property>
+    <Property name="skipEngineHibernateConfiguration">false</Property>
+    <Property name="uiPluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\plugins\com.webratio.ide.ui_9.3.2.202604291841</Property>
+    <Property name="webappPluginDir">C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\plugins\com.webratio.generator.webapp_9.3.2.202604291841</Property>
+    <Property name="wrBuildId">202604291841</Property>
+    <Property name="wrModelStatistics">components=10|pages=0</Property>
+    <Property name="wrVersion">9.3.2</Property>
+    <Property name="authenticationServerBaseUrl">/wr-auth</Property>
+    <Property name="appId">WaveEventManagementData</Property>
+    <Property name="appSecret">WaveEventManagementData</Property>
+  </Properties>
+  <DataServices/>
+  <Plugins>
+    <Plugin id="com.eatthepath.fast-uuid" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.eatthepath.fast-uuid_0.2.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.eatthepath.fast-uuid_0.2.0.jar" name="com.eatthepath.fast-uuid.jar"/>
+    </Plugin>
+    <Plugin id="com.eatthepath.pushy" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.eatthepath.pushy_0.15.4.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.eatthepath.pushy_0.15.4.jar" name="com.eatthepath.pushy.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.classmate" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.classmate_1.3.4.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.classmate_1.3.4.jar" name="com.fasterxml.classmate.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.core.jackson-annotations" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.core.jackson-annotations_2.17.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.core.jackson-annotations_2.17.0.jar" name="com.fasterxml.jackson.core.jackson-annotations.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.core.jackson-core" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.core.jackson-core_2.17.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.core.jackson-core_2.17.0.jar" name="com.fasterxml.jackson.core.jackson-core.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.core.jackson-databind" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.core.jackson-databind_2.17.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.core.jackson-databind_2.17.0.jar" name="com.fasterxml.jackson.core.jackson-databind.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.datatype.jackson-datatype-jsr310" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.datatype.jackson-datatype-jsr310_2.11.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.datatype.jackson-datatype-jsr310_2.11.1.jar" name="com.fasterxml.jackson.datatype.jackson-datatype-jsr310.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base_2.11.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.jaxrs.jackson-jaxrs-base_2.11.1.jar" name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-base.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider_2.11.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider_2.11.1.jar" name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider.jar"/>
+    </Plugin>
+    <Plugin id="com.fasterxml.jackson.module.jackson-module-jaxb-annotations" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.module.jackson-module-jaxb-annotations_2.17.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.fasterxml.jackson.module.jackson-module-jaxb-annotations_2.17.0.jar" name="com.fasterxml.jackson.module.jackson-module-jaxb-annotations.jar"/>
+    </Plugin>
+    <Plugin id="com.google.api.client.googleapis.notifications.json.gson" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.api.client.googleapis.notifications.json.gson_2.7.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.api.client.googleapis.notifications.json.gson_2.7.2.jar" name="com.google.api.client.googleapis.notifications.json.gson.jar"/>
+    </Plugin>
+    <Plugin id="com.google.api.client.googleapis" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.api.client.googleapis_2.7.2.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.api.client.googleapis_2.7.2.1wr.jar" name="com.google.api.client.googleapis.jar"/>
+    </Plugin>
+    <Plugin id="com.google.gson" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.gson_2.8.9.v20220111-1409.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.gson_2.8.9.v20220111-1409.jar" name="com.google.gson.jar"/>
+    </Plugin>
+    <Plugin id="com.google.guava.failureaccess" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.guava.failureaccess_1.0.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.guava.failureaccess_1.0.2.jar" name="com.google.guava.failureaccess.jar"/>
+    </Plugin>
+    <Plugin id="com.google.guava" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.guava_33.1.0.jre.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.guava_33.1.0.jre.jar" name="com.google.guava.jar"/>
+    </Plugin>
+    <Plugin id="com.google.http-client.google-http-client" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.http-client.google-http-client_1.47.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.google.http-client.google-http-client_1.47.1.jar" name="com.google.http-client.google-http-client.jar"/>
+    </Plugin>
+    <Plugin id="com.googlecode.owasp-java-html-sanitizer.java-shim" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.googlecode.owasp-java-html-sanitizer.java-shim_20240325.1.0.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.googlecode.owasp-java-html-sanitizer.java-shim_20240325.1.0.1wr.jar" name="com.googlecode.owasp-java-html-sanitizer.java-shim.jar"/>
+    </Plugin>
+    <Plugin id="com.googlecode.owasp-java-html-sanitizer" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.googlecode.owasp-java-html-sanitizer_20240325.1.0.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.googlecode.owasp-java-html-sanitizer_20240325.1.0.1wr.jar" name="com.googlecode.owasp-java-html-sanitizer.jar"/>
+    </Plugin>
+    <Plugin id="com.jivesoftware.authHelper" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.jivesoftware.authHelper_1.0.0.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.jivesoftware.authHelper_1.0.0.1wr.jar" name="com.jivesoftware.authHelper.jar"/>
+    </Plugin>
+    <Plugin id="com.sun.activation.jakarta.activation" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.activation.jakarta.activation_1.2.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.activation.jakarta.activation_1.2.1.jar" name="com.sun.activation.jakarta.activation.jar"/>
+    </Plugin>
+    <Plugin id="com.sun.istack.commons-runtime" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.istack.commons-runtime_3.0.8.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.istack.commons-runtime_3.0.8.jar" name="com.sun.istack.commons-runtime.jar"/>
+    </Plugin>
+    <Plugin id="com.sun.mail.javax.mail" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.mail.javax.mail_1.5.5.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.mail.javax.mail_1.5.5.jar" name="com.sun.mail.javax.mail.jar"/>
+    </Plugin>
+    <Plugin id="com.sun.xml.fastinfoset.FastInfoset" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.xml.fastinfoset.FastInfoset_1.2.16.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.sun.xml.fastinfoset.FastInfoset_1.2.16.jar" name="com.sun.xml.fastinfoset.FastInfoset.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.auth.commons" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.auth.commons_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.auth.commons_9.3.2.202604291841/com.webratio.auth.commons.jar" name="com.webratio.auth.commons.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.auth.resserver" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.auth.resserver_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.auth.resserver_9.3.2.202604291841/com.webratio.auth.resserver.jar" name="com.webratio.auth.resserver.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.auth.server" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.auth.server_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.auth.server_9.3.2.202604291841/com.webratio.auth.server.jar" name="com.webratio.auth.server.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.commons.base" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.base_3.0.0.202603051428" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.base_3.0.0.202603051428/com.webratio.commons.base.jar" name="com.webratio.commons.base.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.commons.depr.utils" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.depr.utils_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.depr.utils_9.3.2.202604291841/com.webratio.commons.depr.utils.jar" name="com.webratio.commons.depr.utils.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.commons.dom4j" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.dom4j_3.0.0.202604150931" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.dom4j_3.0.0.202604150931/com.webratio.commons.dom4j.jar" name="com.webratio.commons.dom4j.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.commons.incubator" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.incubator_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.incubator_9.3.2.202604291841/com.webratio.commons.incubator.jar" name="com.webratio.commons.incubator.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.commons.transform" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.transform_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.commons.transform_9.3.2.202604291841/com.webratio.commons.transform.jar" name="com.webratio.commons.transform.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.components.web.controlflow" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.controlflow_9.3.2.202604291841" common="true" type="components">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.controlflow_9.3.2.202604291841/com.webratio.components.web.controlflow.jar" name="com.webratio.components.web.controlflow.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.components.web.operation" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.operation_9.3.2.202604291841" common="true" type="components">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.operation_9.3.2.202604291841/com.webratio.components.web.operation.jar" name="com.webratio.components.web.operation.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.components.web.session" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.session_9.3.2.202604291841" common="true" type="components">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.session_9.3.2.202604291841/com.webratio.components.web.session.jar" name="com.webratio.components.web.session.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.components.web.utility" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.utility_9.3.2.202604291841" common="true" type="components">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.utility_9.3.2.202604291841/com.webratio.components.web.utility.jar" name="com.webratio.components.web.utility.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.components.web.validation" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.validation_9.3.2.202604291841" common="true" type="components">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.validation_9.3.2.202604291841/com.webratio.components.web.validation.jar" name="com.webratio.components.web.validation.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.components.web.ws" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.ws_9.3.2.202604291841" common="true" type="components">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.components.web.ws_9.3.2.202604291841/com.webratio.components.web.ws.jar" name="com.webratio.components.web.ws.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.data.mvc" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.data.mvc_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.data.mvc_9.3.2.202604291841/com.webratio.data.mvc.jar" name="com.webratio.data.mvc.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.data" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.data_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.data_9.3.2.202604291841/com.webratio.data.jar" name="com.webratio.data.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.debug" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.debug_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.debug_9.3.2.202604291841/com.webratio.debug.jar" name="com.webratio.debug.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.json" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.json_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.json_9.3.2.202604291841/com.webratio.json.jar" name="com.webratio.json.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.lib.hibernate" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.lib.hibernate_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.lib.hibernate_9.3.2.202604291841/com.webratio.lib.hibernate.jar" name="com.webratio.lib.hibernate.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.lib.spring" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.lib.spring_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.lib.spring_9.3.2.202604291841/lib/spring-webmvc-tld.jar" name="spring-webmvc-tld.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.log.log4j2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.log.log4j2_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.log.log4j2_9.3.2.202604291841/com.webratio.log.log4j2.jar" name="com.webratio.log.log4j2.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.log" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.log_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.log_9.3.2.202604291841/com.webratio.log.jar" name="com.webratio.log.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.rtx" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.rtx_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.rtx_9.3.2.202604291841/com.webratio.rtx.jar" name="com.webratio.rtx.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.web.mvc" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.web.mvc_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.web.mvc_9.3.2.202604291841/com.webratio.web.mvc.jar" name="com.webratio.web.mvc.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.webapp.server" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.webapp.server_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.webapp.server_9.3.2.202604291841/com.webratio.webapp.server.jar" name="com.webratio.webapp.server.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.webclient.server" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.webclient.server_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.webclient.server_9.3.2.202604291841/com.webratio.webclient.server.jar" name="com.webratio.webclient.server.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.ws" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.ws_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.ws_9.3.2.202604291841/com.webratio.ws.jar" name="com.webratio.ws.jar"/>
+    </Plugin>
+    <Plugin id="com.webratio.xsd" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.xsd_9.3.2.202604291841" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/com.webratio.xsd_9.3.2.202604291841/com.webratio.xsd.jar" name="com.webratio.xsd.jar"/>
+    </Plugin>
+    <Plugin id="commons-httpclient.commons-httpclient" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/commons-httpclient.commons-httpclient_3.1.0.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/commons-httpclient.commons-httpclient_3.1.0.1wr.jar" name="commons-httpclient.commons-httpclient.jar"/>
+    </Plugin>
+    <Plugin id="dom4j" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/dom4j_1.6.1.3wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/dom4j_1.6.1.3wr.jar" name="dom4j.jar"/>
+    </Plugin>
+    <Plugin id="groovy-with-all" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/groovy-with-all_3.0.25.2wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy.jar" name="groovy.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-ant.jar" name="groovy-ant.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-astbuilder.jar" name="groovy-astbuilder.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-cli-picocli.jar" name="groovy-cli-picocli.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-console.jar" name="groovy-console.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-datetime.jar" name="groovy-datetime.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-docgenerator.jar" name="groovy-docgenerator.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-groovydoc.jar" name="groovy-groovydoc.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-groovysh.jar" name="groovy-groovysh.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/190/0/.cp/lib/groovy-jmx.jar" name="groovy-jmx.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.buffer" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.buffer_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.buffer_4.2.9.Final.jar" name="io.netty.buffer.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.codec-base" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-base_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-base_4.2.9.Final.jar" name="io.netty.codec-base.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.codec-compression" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-compression_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-compression_4.2.9.Final.jar" name="io.netty.codec-compression.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.codec-dns" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-dns_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-dns_4.2.9.Final.jar" name="io.netty.codec-dns.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.codec-http2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-http2_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-http2_4.2.9.Final.jar" name="io.netty.codec-http2.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.codec-http" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-http_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.codec-http_4.2.9.Final.jar" name="io.netty.codec-http.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.common" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.common_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.common_4.2.9.Final.jar" name="io.netty.common.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.handler-proxy" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.handler-proxy_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.handler-proxy_4.2.9.Final.jar" name="io.netty.handler-proxy.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.handler" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.handler_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.handler_4.2.9.Final.jar" name="io.netty.handler.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.resolver-dns" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.resolver-dns_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.resolver-dns_4.2.9.Final.jar" name="io.netty.resolver-dns.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.resolver" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.resolver_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.resolver_4.2.9.Final.jar" name="io.netty.resolver.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.tcnative-classes" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.tcnative-classes_2.0.65.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.tcnative-classes_2.0.65.Final.jar" name="io.netty.tcnative-classes.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.transport-native-unix-common" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.transport-native-unix-common_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.transport-native-unix-common_4.2.9.Final.jar" name="io.netty.transport-native-unix-common.jar"/>
+    </Plugin>
+    <Plugin id="io.netty.transport" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.transport_4.2.9.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/io.netty.transport_4.2.9.Final.jar" name="io.netty.transport.jar"/>
+    </Plugin>
+    <Plugin id="jakarta.xml.bind-api" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/jakarta.xml.bind-api_2.3.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/jakarta.xml.bind-api_2.3.2.jar" name="jakarta.xml.bind-api.jar"/>
+    </Plugin>
+    <Plugin id="javassist" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/javassist_3.24.0.GA.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/javassist_3.24.0.GA.jar" name="javassist.jar"/>
+    </Plugin>
+    <Plugin id="javax.persistence-api" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/javax.persistence-api_2.2.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/javax.persistence-api_2.2.0.jar" name="javax.persistence-api.jar"/>
+    </Plugin>
+    <Plugin id="javax.transaction.jta" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/javax.transaction.jta_1.1.0.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/javax.transaction.jta_1.1.0.1wr.jar" name="javax.transaction.jta.jar"/>
+    </Plugin>
+    <Plugin id="jaxen" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/jaxen_1.2.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/jaxen_1.2.0.jar" name="jaxen.jar"/>
+    </Plugin>
+    <Plugin id="jcl.over.slf4j" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/jcl.over.slf4j_2.0.13.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/jcl.over.slf4j_2.0.13.1wr.jar" name="jcl.over.slf4j.jar"/>
+    </Plugin>
+    <Plugin id="net.bytebuddy.byte-buddy" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/net.bytebuddy.byte-buddy_1.14.9.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/net.bytebuddy.byte-buddy_1.14.9.jar" name="net.bytebuddy.byte-buddy.jar"/>
+    </Plugin>
+    <Plugin id="net.sf.ehcache" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/net.sf.ehcache_2.10.1.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/net.sf.ehcache_2.10.1.1wr.jar" name="net.sf.ehcache.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.beanutils" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.beanutils_1.8.3.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.beanutils_1.8.3.jar" name="org.apache.commons.beanutils.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.collections" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.collections_3.2.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.collections_3.2.2.jar" name="org.apache.commons.collections.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.commons-codec" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.commons-codec_1.16.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.commons-codec_1.16.1.jar" name="org.apache.commons.commons-codec.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.commons-fileupload" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.commons-fileupload_1.6.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.commons-fileupload_1.6.0.jar" name="org.apache.commons.commons-fileupload.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.commons-io" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.commons-io_2.19.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.commons-io_2.19.0.jar" name="org.apache.commons.commons-io.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.lang" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.lang_2.6.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.lang_2.6.0.jar" name="org.apache.commons.lang.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.commons.net" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.net_3.4.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.commons.net_3.4.0.jar" name="org.apache.commons.net.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.logging.log4j.api" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.api_2.25.3.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.api_2.25.3.1wr.jar" name="org.apache.logging.log4j.api.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.logging.log4j.core" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.core_2.25.3.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.core_2.25.3.1wr.jar" name="org.apache.logging.log4j.core.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.logging.log4j.slf4j2.impl" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.slf4j2.impl_2.25.3.3wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.slf4j2.impl_2.25.3.3wr.jar" name="org.apache.logging.log4j.slf4j2.impl.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.logging.log4j.web" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.web_2.25.3.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.logging.log4j.web_2.25.3.1wr.jar" name="org.apache.logging.log4j.web.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.poi.poi-with-ooxml" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.poi.poi-with-ooxml_3.13.0.3wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/282/0/.cp/lib/poi.jar" name="poi.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/282/0/.cp/lib/poi-ooxml.jar" name="poi-ooxml.jar"/>
+    </Plugin>
+    <Plugin id="org.apache.tika.core" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.tika.core_1.28.5.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.apache.tika.core_1.28.5.jar" name="org.apache.tika.core.jar"/>
+    </Plugin>
+    <Plugin id="org.h2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.h2_1.4.190.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.h2_1.4.190.jar" name="org.h2.jar"/>
+    </Plugin>
+    <Plugin id="org.hibernate.common.hibernate-commons-annotations" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.hibernate.common.hibernate-commons-annotations_5.1.0.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.hibernate.common.hibernate-commons-annotations_5.1.0.Final.jar" name="org.hibernate.common.hibernate-commons-annotations.jar"/>
+    </Plugin>
+    <Plugin id="org.hibernate.orm.c3p0" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.hibernate.orm.c3p0_5.4.2.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.hibernate.orm.c3p0_5.4.2.Final.jar" name="org.hibernate.orm.c3p0.jar"/>
+    </Plugin>
+    <Plugin id="org.hibernate.orm.core" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.hibernate.orm.core_5.4.2.Final_4wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.hibernate.orm.core_5.4.2.Final_4wr.jar" name="org.hibernate.orm.core.jar"/>
+    </Plugin>
+    <Plugin id="org.jboss.logging.jboss-logging" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.jboss.logging.jboss-logging_3.6.2.Final.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.jboss.logging.jboss-logging_3.6.2.Final.jar" name="org.jboss.logging.jboss-logging.jar"/>
+    </Plugin>
+    <Plugin id="org.jvnet.mimepull" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.jvnet.mimepull_1.9.6.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.jvnet.mimepull_1.9.6.jar" name="org.jvnet.mimepull.jar"/>
+    </Plugin>
+    <Plugin id="org.jvnet.staxex.stax-ex" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.jvnet.staxex.stax-ex_1.8.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.jvnet.staxex.stax-ex_1.8.1.jar" name="org.jvnet.staxex.stax-ex.jar"/>
+    </Plugin>
+    <Plugin id="org.quartz-scheduler.quartz-with-quartz-weblogic" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/org.quartz-scheduler.quartz-with-quartz-weblogic_2.1.7.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/584/0/.cp/lib/quartz.jar" name="quartz.jar"/>
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/configuration/org.eclipse.osgi/584/0/.cp/lib/quartz-weblogic.jar" name="quartz-weblogic.jar"/>
+    </Plugin>
+    <Plugin id="slf4j.api" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/slf4j.api_2.0.13.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/slf4j.api_2.0.13.1wr.jar" name="slf4j.api.jar"/>
+    </Plugin>
+    <Plugin id="slf4j.ext" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/slf4j.ext_2.0.13.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/slf4j.ext_2.0.13.jar" name="slf4j.ext.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.google.api.api-common" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.api.api-common_2.53.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.api.api-common_2.53.0.jar" name="com.google.api.api-common.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.google.auth.google-auth-library-credentials" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.auth.google-auth-library-credentials_1.37.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.auth.google-auth-library-credentials_1.37.1.jar" name="com.google.auth.google-auth-library-credentials.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.google.auth.google-auth-library-oauth2-http" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.auth.google-auth-library-oauth2-http_1.37.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.auth.google-auth-library-oauth2-http_1.37.1.jar" name="com.google.auth.google-auth-library-oauth2-http.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.google.firebase.firebase-admin" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.firebase.firebase-admin_9.7.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.firebase.firebase-admin_9.7.0.jar" name="com.google.firebase.firebase-admin.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.google.http-client.google-http-client-gson" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.http-client.google-http-client-gson_1.47.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.http-client.google-http-client-gson_1.47.0.jar" name="com.google.http-client.google-http-client-gson.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.google.http-client.google-http-client-jackson2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.http-client.google-http-client-jackson2_1.44.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.google.http-client.google-http-client-jackson2_1.44.1.jar" name="com.google.http-client.google-http-client-jackson2.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.mchange.c3p0" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.mchange.c3p0_0.9.5.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.mchange.c3p0_0.9.5.2.jar" name="com.mchange.c3p0.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.mchange.mchange-commons-java" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.mchange.mchange-commons-java_0.2.11.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.mchange.mchange-commons-java_0.2.11.1wr.jar" name="com.mchange.mchange-commons-java.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.com.monitorjbl.xlsx-streamer" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.monitorjbl.xlsx-streamer_1.1.0.6wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.com.monitorjbl.xlsx-streamer_1.1.0.6wr.jar" name="com.monitorjbl.xlsx-streamer.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.commons-httpclient.commons-httpclient-contrib-ssl" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.commons-httpclient.commons-httpclient-contrib-ssl_3.1.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.commons-httpclient.commons-httpclient-contrib-ssl_3.1.0.jar" name="commons-httpclient.commons-httpclient-contrib-ssl.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.io.grpc.grpc-context" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.io.grpc.grpc-context_1.70.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.io.grpc.grpc-context_1.70.0.jar" name="io.grpc.grpc-context.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.io.opencensus.opencensus-api" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.io.opencensus.opencensus-api_0.31.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.io.opencensus.opencensus-api_0.31.1.jar" name="io.opencensus.opencensus-api.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.io.opencensus.opencensus-contrib-http-util" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.io.opencensus.opencensus-contrib-http-util_0.31.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.io.opencensus.opencensus-contrib-http-util_0.31.1.jar" name="io.opencensus.opencensus-contrib-http-util.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.antlr.antlr-complete" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.antlr.antlr-complete_3.5.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.antlr.antlr-complete_3.5.2.jar" name="org.antlr.antlr-complete.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.httpcomponents.client5.httpclient5" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.client5.httpclient5_5.3.1.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.client5.httpclient5_5.3.1.jar" name="org.apache.httpcomponents.client5.httpclient5.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.httpcomponents.core5.httpcore5-h2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.core5.httpcore5-h2_5.2.4.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.core5.httpcore5-h2_5.2.4.jar" name="org.apache.httpcomponents.core5.httpcore5-h2.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.httpcomponents.core5.httpcore5" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.core5.httpcore5_5.2.4.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.core5.httpcore5_5.2.4.jar" name="org.apache.httpcomponents.core5.httpcore5.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.httpcomponents.httpclient" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.httpclient_4.5.14.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.httpclient_4.5.14.jar" name="org.apache.httpcomponents.httpclient.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.httpcomponents.httpcore" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.httpcore_4.4.16.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.httpcore_4.4.16.jar" name="org.apache.httpcomponents.httpcore.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.httpcomponents.httpmime" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.httpmime_4.5.14.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.httpcomponents.httpmime_4.5.14.jar" name="org.apache.httpcomponents.httpmime.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.poi.poi-ooxml-schemas" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.poi.poi-ooxml-schemas_3.13.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.poi.poi-ooxml-schemas_3.13.0.jar" name="org.apache.poi.poi-ooxml-schemas.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.poi.poi-scratchpad" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.poi.poi-scratchpad_3.13.0.1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.poi.poi-scratchpad_3.13.0.1wr.jar" name="org.apache.poi.poi-scratchpad.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.apache.xmlbeans.xmlbeans" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.xmlbeans.xmlbeans_2.6.0.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.apache.xmlbeans.xmlbeans_2.6.0.jar" name="org.apache.xmlbeans.xmlbeans.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.glassfish.jaxb.jaxb-runtime" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.glassfish.jaxb.jaxb-runtime_2.3.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.glassfish.jaxb.jaxb-runtime_2.3.2.jar" name="org.glassfish.jaxb.jaxb-runtime.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.glassfish.jaxb.txw2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.glassfish.jaxb.txw2_2.3.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.glassfish.jaxb.txw2_2.3.2.jar" name="org.glassfish.jaxb.txw2.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.quartz-scheduler.quartz-commonj" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.quartz-scheduler.quartz-commonj_2.1.7.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.quartz-scheduler.quartz-commonj_2.1.7.jar" name="org.quartz-scheduler.quartz-commonj.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.quartz-scheduler.quartz-jboss" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.quartz-scheduler.quartz-jboss_2.1.7.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.quartz-scheduler.quartz-jboss_2.1.7.jar" name="org.quartz-scheduler.quartz-jboss.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.security.oauth.spring-security-oauth2" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.oauth.spring-security-oauth2_2.3.3.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.oauth.spring-security-oauth2_2.3.3.RELEASE.jar" name="org.springframework.security.oauth.spring-security-oauth2.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.security.spring-security-config" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-config_5.1.6.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-config_5.1.6.RELEASE.jar" name="org.springframework.security.spring-security-config.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.security.spring-security-core" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-core_5.1.6.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-core_5.1.6.RELEASE.jar" name="org.springframework.security.spring-security-core.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.security.spring-security-jwt" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-jwt_1.0.9.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-jwt_1.0.9.RELEASE.jar" name="org.springframework.security.spring-security-jwt.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.security.spring-security-web" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-web_5.1.6.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.security.spring-security-web_5.1.6.RELEASE.jar" name="org.springframework.security.spring-security-web.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-aop" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-aop_5.1.9.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-aop_5.1.9.RELEASE.jar" name="org.springframework.spring-aop.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-beans" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-beans_5.1.9.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-beans_5.1.9.RELEASE.jar" name="org.springframework.spring-beans.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-context-support" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-context-support_5.1.9.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-context-support_5.1.9.RELEASE.jar" name="org.springframework.spring-context-support.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-context" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-context_5.1.9.RELEASE_1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-context_5.1.9.RELEASE_1wr.jar" name="org.springframework.spring-context.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-core" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-core_5.1.9.RELEASE_1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-core_5.1.9.RELEASE_1wr.jar" name="org.springframework.spring-core.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-expression" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-expression_5.1.9.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-expression_5.1.9.RELEASE.jar" name="org.springframework.spring-expression.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-web" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-web_5.1.9.RELEASE_1wr.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-web_5.1.9.RELEASE_1wr.jar" name="org.springframework.spring-web.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.org.springframework.spring-webmvc" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-webmvc_5.1.9.RELEASE.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.org.springframework.spring-webmvc_5.1.9.RELEASE.jar" name="org.springframework.spring-webmvc.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.oro.oro" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.oro.oro_2.0.8.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.oro.oro_2.0.8.jar" name="oro.oro.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.wsdl4j.wsdl4j" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.wsdl4j.wsdl4j_1.6.3.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.wsdl4j.wsdl4j_1.6.3.jar" name="wsdl4j.wsdl4j.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.xalan.serializer" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.xalan.serializer_2.7.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.xalan.serializer_2.7.2.jar" name="xalan.serializer.jar"/>
+    </Plugin>
+    <Plugin id="wrapped.xalan.xalan" path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.xalan.xalan_2.7.2.jar" common="true">
+      <CopyJar path="C:/WebRatio/WebRatio Platform Community 9.3.2/WebRatio/plugins/wrapped.xalan.xalan_2.7.2.jar" name="xalan.xalan.jar"/>
+    </Plugin>
+  </Plugins>
+  <Styles/>
+  <FileEncodings/>
+</Configuration>

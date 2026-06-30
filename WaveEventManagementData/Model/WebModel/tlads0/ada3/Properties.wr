@@ -1,0 +1,36 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada3" name="Creazione Evento" defaultSuccessPortDefinition="tlads0#ada3#spd6" defaultErrorPortDefinition="tlads0#ada3#epd5">
+  <InputPortDefinition id="tlads0#ada3#ipd5" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ada3#ipd5#sf21" to="tlads0#ada3#svu4">
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par11" source="tlads0#ada3#ipd5#pdp28" target="tlads0#ada3#svu4.cls2#att16" name="Costo Evento - Costo Evento"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par12" source="tlads0#ada3#ipd5#pdp24" target="tlads0#ada3#svu4.cls2#att12" name="Data Creazione - Data Creazione"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par13" source="tlads0#ada3#ipd5#pdp23" target="tlads0#ada3#svu4.cls2#att14" name="Data Fine - Data Fine"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par14" source="tlads0#ada3#ipd5#pdp32" target="tlads0#ada3#svu4.cls2#att13" name="Data Inizio - Data Inizio"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par15" source="tlads0#ada3#ipd5#pdp31" target="tlads0#ada3#svu4.cls2#att19" name="Descrizione - Descrizione"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par16" source="tlads0#ada3#ipd5#pdp30" target="tlads0#ada3#svu4.cls2#att18" name="Eta Minima - Eta Minima"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par17" source="tlads0#ada3#ipd5#pdp29" target="tlads0#ada3#svu4.cls2#att10" name="isPubblico - isPubblico"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par21" source="tlads0#ada3#ipd5#pdp26" target="tlads0#ada3#svu4.cls2#att17" name="Luogo - Luogo"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par23" source="tlads0#ada3#ipd5#pdp25" target="tlads0#ada3#svu4.cls2#att15" name="Numero Posti - Numero Posti"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par24" source="tlads0#ada3#ipd5#pdp27" target="tlads0#ada3#svu4.cls2#att11" name="Titolo - Titolo"/>
+      <ParameterBinding id="tlads0#ada3#ipd5#sf21#par25" target="tlads0#ada3#svu4.as3#role6.userOID" name="User ID - User.codice_user(EventoToUser)" source="tlads0#ada3#ipd5#pdp11"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp23" array="false" name="Data Fine" type="timestamp"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp24" array="false" name="Data Creazione" type="timestamp"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp25" array="false" name="Numero Posti" type="integer"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp26" array="false" name="Luogo" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp27" array="false" name="Titolo" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp28" array="false" name="Costo Evento" type="decimal"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp29" array="false" name="isPubblico" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp30" array="false" name="Eta Minima" type="integer"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp31" array="false" name="Descrizione" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp32" array="false" name="Data Inizio" type="timestamp"/>
+    <PortDefinitionParameter id="tlads0#ada3#ipd5#pdp11" name="Codice_Utente" type="integer"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ada3#spd6" name="Success Port" gr:x="0" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ada3#epd5" name="Error Port" gr:x="0" gr:y="300"/>
+  <Operations>
+    <Save gr:x="455" gr:y="170" id="tlads0#ada3#svu4" action="create" name="Creazione Evento" dataBinding="cls2" skipBlankRecords="true">
+      <SuccessFlow id="tlads0#ada3#svu4#sf22" to="tlads0#ada3#spd6" automaticCoupling="true"/>
+      <ErrorFlow id="tlads0#ada3#svu4#ef4" to="tlads0#ada3#epd5" automaticCoupling="true"/>
+    </Save>
+  </Operations>
+</ActionDefinition>

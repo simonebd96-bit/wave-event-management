@@ -1,0 +1,25 @@
+<wr-page>
+  <wr-content for="logo">
+    <img src="assets/WebDefault/images/webratio-logo.png" class="wd-logo-top-left">
+  </wr-content>
+  <wr-content for="login">
+    <wd-alert [messages]="valueOf('main/msg2/messages')" [localized]="true" color="primary"></wd-alert>
+    <!-- MODIFICA #5: messaggio di errore quando la vecchia password non corrisponde -->
+    <wd-alert [messages]="valueOf('main/msg1/messages')" color="warn" [localized]="false" [dismissable]="true"></wd-alert>
+    <wd-card title="main/frm1">
+      <wr-content for="content">
+        <form>
+          <wd-password floatLabel="auto" context="model:main/frm1/fld1" [label]="'Vecchia Password'"></wd-password>
+          <wd-password floatLabel="auto" context="model:main/frm1/fld2" [label]="'Nuova Password'"></wd-password>
+          <wd-password floatLabel="auto" context="model:main/frm1/fld3" [label]="'Conferma Nuova Password'"></wd-password>
+          <wd-button context="main/frm1/oslte1" color="primary"></wd-button>
+          <!-- MODIFICA #4: tasto Home -->
+          <wd-button context="main/frm1/oslte200a" iconText="home" variant="mat-icon-button" color="accent"></wd-button>
+        </form>
+      </wr-content>
+      <wr-content for="title[frm1]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

@@ -1,0 +1,45 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="925" gr:y="605" id="wv1#page10" name="Le Mie Prenotazioni">
+  <ViewComponents>
+    <List id="wv1#page10#lst4" checkable="false" distinct="false" gr:x="0" gr:y="0" name="Le Mie Prenotazioni">
+      <DataBinding classServiceRes="WaveEventManagementData$cls1"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att6" direction="desc"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att5"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att6"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att7"/>
+    </List>
+    <Form gr:x="0" gr:y="200" id="wv1#page10#frm110" name="Cancella Prenotazione">
+      <Events>
+        <OnSelectEvent id="wv1#page10#frm110#oslte110" name="cancella" validate="true">
+          <NavigationFlow id="wv1#page10#frm110#oslte110#nf110" to="wv1#act10">
+            <ParameterBinding id="wv1#page10#frm110#oslte110#nf110#par300" source="{wv1#page10#frm110#fld110}value" target="wv1#act10.WaveEventManagementData$pdp40" name="Codice Prenotazione - Codice Prenotazione"/>
+            <ParameterBinding id="wv1#page10#frm110#oslte110#nf110#par301" source="wv1#page10#prd3" passing="true" name="Codice_Utente - PASSING"/>
+            <ParameterBinding id="wv1#page10#frm110#oslte110#nf110#par302" source="wv1#page10#prd4" passing="true" name="Username - PASSING"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#page10#frm110#fld110" type="integer" modifiable="true" name="Codice Prenotazione">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page10#frm110#fld110#mnd110" name="mandatory"/>
+        </VRules>
+      </Field>
+    </Form>
+  </ViewComponents>
+  <Events>
+    <OnSelectEvent id="wv1#page10#oslte50" name="Cancella Prenotazione">
+      <NavigationFlow id="wv1#page10#oslte50#nf42" to="wv1#act10">
+        <ParameterBinding id="wv1#page10#oslte50#nf42#par205" source="wv1#page10#lst4.WaveEventManagementData$att5" target="wv1#act10.WaveEventManagementData$pdp40" name="Codice Prenotazione - Codice Prenotazione"/>
+      </NavigationFlow>
+    </OnSelectEvent>
+    <OnSelectEvent id="wv1#page10#oslte51" name="Torna alla Home">
+      <NavigationFlow id="wv1#page10#oslte51#nf53" to="wv1#page1#lst3">
+        <ParameterBinding id="wv1#page10#oslte51#nf53#par33" sourceParameter="wv1#page10#prd3" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page10#oslte51#nf53#par34" sourceParameter="wv1#page10#prd4" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+        <ParameterBinding id="wv1#page10#oslte51#nf53#par53" sourceParameter="wv1#page10#prd3" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+      </NavigationFlow>
+    </OnSelectEvent>
+  </Events>
+  <Parameters>
+    <Parameter id="wv1#page10#prd3" name="Codice_Utente" type="integer"/>
+    <Parameter id="wv1#page10#prd4" name="Username" type="string"/>
+  </Parameters>
+</Page>

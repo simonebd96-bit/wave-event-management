@@ -1,0 +1,37 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad2" name="Sign in" defaultSuccessPortDefinition="tlads0#ad2#spd2" defaultErrorPortDefinition="tlads0#ad2#epd4">
+  <Operations>
+    <Login id="tlads0#ad2#lgn1" name="Sign in" gr:x="330" gr:y="20">
+      <SuccessFlow id="tlads0#ad2#lgn1#sf4" to="tlads0#ad2#spd2" automaticCoupling="true"/>
+      <ErrorFlow id="tlads0#ad2#lgn1#ef2" to="tlads0#ad2#epd4">
+        <ParameterBinding id="tlads0#ad2#lgn1#ef2#par10" source="errorCode" target="tlads0#ad2#epd4#pdp9" name="Error Code - Error Message"/>
+      </ErrorFlow>
+      <ErrorFlow id="tlads0#ad2#lgn1#ef3" to="tlads0#ad2#epd2" automaticCoupling="true" code="Password Expired"/>
+      <ErrorFlow id="tlads0#ad2#lgn1#ef4" to="tlads0#ad2#epd3" code="Max Login Attempts">
+        <ParameterBinding id="tlads0#ad2#lgn1#ef4#par11" source="loginAttemptsNumber" target="tlads0#ad2#epd3#pdp7" name="Login Attempts Number - Login Attempts Number"/>
+        <ParameterBinding id="tlads0#ad2#lgn1#ef4#par12" source="errorCode" target="tlads0#ad2#epd3#pdp8" name="Error Code - Error Message"/>
+      </ErrorFlow>
+      <ErrorFlow id="tlads0#ad2#lgn1#ef5" to="tlads0#ad2#epd4" code="Internal Error">
+        <ParameterBinding id="tlads0#ad2#lgn1#ef5#par13" source="errorCode" target="tlads0#ad2#epd4#pdp9" name="Error Code - Error Message"/>
+      </ErrorFlow>
+    </Login>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad2#ipd2" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad2#ipd2#pdp4" name="Username"/>
+    <PortDefinitionParameter id="tlads0#ad2#ipd2#pdp5" name="Password"/>
+    <PortDefinitionParameter id="tlads0#ad2#ipd2#pdp6" name="Remember Me"/>
+    <SuccessFlow id="tlads0#ad2#ipd2#sf3" to="tlads0#ad2#lgn1">
+      <ParameterBinding id="tlads0#ad2#ipd2#sf3#par7" source="tlads0#ad2#ipd2#pdp4" target="username" name="Username - Username"/>
+      <ParameterBinding id="tlads0#ad2#ipd2#sf3#par8" source="tlads0#ad2#ipd2#pdp5" target="password" name="Password - Password"/>
+      <ParameterBinding id="tlads0#ad2#ipd2#sf3#par9" source="tlads0#ad2#ipd2#pdp6" target="rememberMe" name="Remember Me - Remember Me"/>
+    </SuccessFlow>
+  </InputPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad2#epd2" name="Password Expired" gr:y="-130"/>
+  <SuccessPortDefinition id="tlads0#ad2#spd2" name="Success" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ad2#epd3" name="Max Login Attempts" gr:y="130">
+    <PortDefinitionParameter id="tlads0#ad2#epd3#pdp7" name="Login Attempts Number"/>
+    <PortDefinitionParameter id="tlads0#ad2#epd3#pdp8" name="Error Message"/>
+  </ErrorPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad2#epd4" name="Error" gr:y="260">
+    <PortDefinitionParameter id="tlads0#ad2#epd4#pdp9" name="Error Message"/>
+  </ErrorPortDefinition>
+</ActionDefinition>

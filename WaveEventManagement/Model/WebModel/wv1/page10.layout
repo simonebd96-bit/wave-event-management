@@ -1,0 +1,53 @@
+<wr-page>
+  <wr-content for="user">
+    <wd-button context="main/oslte51" iconText="home" variant="mat-icon-button"></wd-button>
+  </wr-content>
+  <wr-content for="page-content">
+    <wd-data-grid [rows]="valueOf('main/lst4/data')" cols="main/lst4/data/{Attribute}*">
+      <wr-content for="header[_be_att5]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att5]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att6]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att6]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att7]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att7]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header-actions">
+        <wd-button context="main/oslte51" color="accent"></wd-button>
+      </wr-content>
+    </wd-data-grid>
+    <div style="max-width: 400px; margin: 0 auto; padding: 20px;">
+      <h3 style="text-align: center; margin-bottom: 20px; color: #333;">
+        Cancella una Prenotazione
+      </h3>
+      <form>
+        <wd-input [showClearIcon]="false" floatLabel="auto" context="model:main/frm110/fld110" [disableAutocompletion]="true"></wd-input>
+        <div style="display: flex; justify-content: center; margin-top: 15px;">
+          <wd-button context="main/frm110/oslte110" color="warn"></wd-button>
+        </div>
+      </form>
+    </div>
+  </wr-content>
+  <wr-content for="footer-content">
+    
+  </wr-content>
+  <wr-content for="breadcrumb">
+    {{ 'Benvenuto codice ' + valueOf('main/prd3') + ' utente: ' + valueOf('main/prd4') }}
+  </wr-content>
+  <wr-content for="brand">
+    <wd-image staticImage="assets/WebDefault/images/webratio-logo.png"></wd-image>
+  </wr-content>
+  <wr-content for="menu">
+    {{ 'EVENT MANAGEMENT SYSTEM -  W e a v e ' | wrLocalize }}
+  </wr-content>
+</wr-page>

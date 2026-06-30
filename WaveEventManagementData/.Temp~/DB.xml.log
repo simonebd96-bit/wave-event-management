@@ -1,0 +1,20 @@
+[30 giu 2026 20:34:49] Building database metadata model
+[30 giu 2026 20:34:49] Properties: {includeTables=true, processColumnsUsingSelect=, readIndexes=null, tableRegex=null, includePrimaryKeys=true, outputPath=C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\wave-event-management\WaveEventManagementData\.Temp~\DB.xml, driverClass=org.postgresql.Driver, includeSynonyms=true, derby.system.home=C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\.metadata\.plugins\com.webratio.commons.db\derby, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, readSQLDefinitions=true, includeViews=true, schemaRegex=null, includeForeignKeys=true, retrieveAllNames=false, outputLogPath=C:\WebRatio\WebRatio Platform Community 9.3.2\workspace\wave-event-management\WaveEventManagementData\.Temp~\DB.xml.log, eventSocketPort=55188, url=jdbc:postgresql://localhost:5432/postgres, tablesToRefresh=public.eventi_pubblici_disponibili, readProcedures=null, eventSocketClient=com.webratio.commons.net.EventSocketClient@48e1f6c7, partialRefresh=true, username=postgres}
+[30 giu 2026 20:34:49] URL: jdbc:postgresql://localhost:5432/postgres
+[30 giu 2026 20:34:49] Product name: PostgreSQL
+[30 giu 2026 20:34:49] Product version: 15.18
+[30 giu 2026 20:34:49] Driver name: PostgreSQL JDBC Driver
+[30 giu 2026 20:34:49] Driver version: 42.7.11
+[30 giu 2026 20:34:49] Driver major version: 42
+[30 giu 2026 20:34:49] Driver minor version: 7
+[30 giu 2026 20:34:49] Identifier quote string: 7
+[30 giu 2026 20:34:49] Retrieving schemas
+[30 giu 2026 20:34:49]   Found schema: information_schema
+[30 giu 2026 20:34:49]   Found schema: pg_catalog
+[30 giu 2026 20:34:49]   Found schema: public
+[30 giu 2026 20:34:49] Retrieving sequences
+[30 giu 2026 20:34:49] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[30 giu 2026 20:34:49] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[30 giu 2026 20:34:49] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[30 giu 2026 20:34:49] Database metadata retrieved (56 ms)
+[30 giu 2026 20:34:49] Database connection closed

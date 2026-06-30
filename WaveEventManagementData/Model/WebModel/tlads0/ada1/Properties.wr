@@ -1,0 +1,32 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada1" name="Registrazione Utente" defaultSuccessPortDefinition="tlads0#ada1#spd1" defaultErrorPortDefinition="tlads0#ada1#epd1" transaction="true">
+  <InputPortDefinition id="tlads0#ada1#ipd1" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ada1#ipd1#sf5" to="tlads0#ada1#svu1">
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par1" source="tlads0#ada1#ipd1#pdp1" target="tlads0#ada1#svu1.User#att2" name="Cognome - Cognome"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par3" source="tlads0#ada1#ipd1#pdp3" target="tlads0#ada1#svu1.User#att1" name="Nome - Nome"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par4" source="tlads0#ada1#ipd1#pdp4" target="tlads0#ada1#svu1.User#att3" name="e-mail - e-mail"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par5" source="tlads0#ada1#ipd1#pdp5" target="tlads0#ada1#svu1.User#att20" name="Eta - Eta"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par6" source="tlads0#ada1#ipd1#pdp6" target="tlads0#ada1#svu1.userName" name="Username - Username"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par9" source="tlads0#ada1#ipd1#pdp9" target="tlads0#ada1#svu1.User#att30" name="Saldo Wallet - Saldo Wallet"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par10" source="tlads0#ada1#ipd1#pdp8" target="tlads0#ada1#svu1.secretKey" name="Secret Key - Secret Key"/>
+      <ParameterBinding id="tlads0#ada1#ipd1#sf5#par20" source="tlads0#ada1#ipd1#pdp22" target="tlads0#ada1#svu1.User#att31" name="Password - Password"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp1" array="false" name="Cognome" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp3" array="false" name="Nome" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp4" array="false" name="e-mail" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp5" array="false" name="Eta" type="integer"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp6" array="false" name="Username" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp8" array="false" name="Secret Key" type="string"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp9" array="false" name="Saldo Wallet" type="decimal"/>
+    <PortDefinitionParameter id="tlads0#ada1#ipd1#pdp22" array="false" name="Password" type="string"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ada1#spd1" name="Success Port" gr:x="0" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ada1#epd1" name="Error Port" gr:x="0" gr:y="300"/>
+  <Operations>
+    <Save gr:x="440" gr:y="150" id="tlads0#ada1#svu1" action="create" name="Create User" dataBinding="User" skipBlankRecords="true">
+      <SuccessFlow id="tlads0#ada1#svu1#sf6" to="tlads0#ada1#spd1">
+        <ParameterBinding id="tlads0#ada1#svu1#sf6#par22" source="userOIDArray" passing="true" name="Codice Utente - PASSING"/>
+      </SuccessFlow>
+      <ErrorFlow id="tlads0#ada1#svu1#ef1" to="tlads0#ada1#epd1" automaticCoupling="true"/>
+    </Save>
+  </Operations>
+</ActionDefinition>

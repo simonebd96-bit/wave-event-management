@@ -1,0 +1,97 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-data-grid [rows]="valueOf('main/lst3/data')" cols="main/lst3/data/{Attribute}*" title="main/lst3">
+      <wr-content for="header[_be_att9]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att9]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att10]"></wr-content>
+      <wr-content for="data[_be_att10]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att11]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att11]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att13]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att13]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att14]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att14]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att15]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att15]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
+      <wr-content for="header[_be_att16]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att16]">
+        {{ valueOf('.', row) | number:'wr-decimal' }} EUR
+      </wr-content>
+      <wr-content for="header[_be_att17]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att17]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_att18]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att18]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
+      <wr-content for="header[_be_att19]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att19]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header-actions">
+        <wd-button context="main/oslte160" iconText="edit" variant="mat-icon-button"></wd-button>
+        <wd-button context="main/oslte17" iconText="add_circle" variant="mat-icon-button"></wd-button>
+      </wr-content>
+      <wr-content for="title[lst3]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="header[_be_att12]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att12]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_att102]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att102]">
+        {{ valueOf('.', row) | number:'wr-integer' }}
+      </wr-content>
+    </wd-data-grid>
+  </wr-content>
+  <wr-content for="footer-content">
+    <wd-button context="main/oslte18" color="primary"></wd-button>
+    <wd-button context="main/oslte19" color="accent"></wd-button>
+    <wd-button context="main/oslte100" color="primary"></wd-button>
+  </wr-content>
+  <wr-content for="menu">
+    {{ 'EVENT MANAGEMENT SYSTEM -  W e a v e ' | wrLocalize }}
+  </wr-content>
+  <wr-content for="breadcrumb">
+    {{ 'Benvenuto codice ' + valueOf('main/prd6') + ' utente: ' + valueOf('main/prd9') }}
+  </wr-content>
+  <wr-content for="brand">
+    <wd-image staticImage="assets/WebDefault/images/webratio-logo.png"></wd-image>
+  </wr-content>
+</wr-page>

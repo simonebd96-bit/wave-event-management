@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="565" gr:y="660" id="wv1#page13" name="Ricerca Eventi Pubblici">
+  <ViewComponents>
+    <List id="wv1#page13#lst9" checkable="false" distinct="false" gr:x="5" gr:y="0" name="Eventi Pubblici">
+      <DataBinding classServiceRes="WaveEventManagementData$cls2"/>
+      <SortAttribute classServiceAttribute="WaveEventManagementData$att13" direction="asc"/>
+      <ConditionalExpression id="wv1#page13#lst9#sc4" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv1#page13#lst9#sc4#acond4" name="eventi not utente in sessione" predicate="neq" booleanOperator="and" implied="false">
+          <AttributesConditionAttr classServiceAttribute="WaveEventManagementData$att102"/>
+        </AttributesCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att11"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att13"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att17"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att16"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att15"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att12"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att14"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att18"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att19"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att9"/>
+      <DisplayAttributes classServiceAttribute="WaveEventManagementData$att102"/>
+      <DataFlow id="wv1#page13#lst9#df6" to="wv1#page10#lst4">
+        <ParameterBinding id="wv1#page13#lst9#df6#par59" sourceParameter="wv1#page13#prd1" targetParameter="wv1#page10#prd3" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page13#lst9#df6#par60" sourceParameter="wv1#page13#prd2" targetParameter="wv1#page10#prd4" name="Username - Username"/>
+      </DataFlow>
+    </List>
+    <Form gr:x="0" gr:y="135" id="wv1#page13#frm4" name="Esegui Prenotazione">
+      <Events>
+        <OnSelectEvent id="wv1#page13#frm4#oslte4" name="prenota" validate="true">
+          <NavigationFlow id="wv1#page13#frm4#oslte4#nf4" to="wv1#act9" name="aggiungi prenotazione">
+            <ParameterBinding id="wv1#page13#frm4#oslte4#nf4#par19" source="{wv1#page13#frm4#fld8}value" target="wv1#act9.WaveEventManagementData$pdp35" name="Data Prenotazione - Data Prenotazione"/>
+            <ParameterBinding id="wv1#page13#frm4#oslte4#nf4#par20" source="{wv1#page13#frm4#fld7}value" target="wv1#act9.WaveEventManagementData$pdp2" name="Codice Evento - EVENTO_2.Codice Evento(PrenotazioneToEvento)"/>
+            <ParameterBinding id="wv1#page13#frm4#oslte4#nf4#par21" sourceParameter="wv1#page13#prd1" target="wv1#act9.WaveEventManagementData$pdp7" name="Codice_Utente - User.codice_user(PrenotazioneToUser)"/>
+            <ParameterBinding id="wv1#page13#frm4#oslte4#nf4#par29" source="wv1#page13#prd2" passing="true" name="Username - PASSING"/>
+            <ParameterBinding id="wv1#page13#frm4#oslte4#nf4#par51" source="wv1#page13#prd1" passing="true" name="Codice_Utente - PASSING"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#page13#frm4#fld7" type="integer" modifiable="true" name="Codice Evento"/>
+      <Field id="wv1#page13#frm4#fld8" type="timestamp" modifiable="true" name="Data Prenotazione"/>
+    </Form>
+  </ViewComponents>
+  <Events>
+    <OnSelectEvent id="wv1#page13#oslte31" name="Torna alla Home" gr:pinned="true" gr:side="0" gr:pos="2">
+      <NavigationFlow id="wv1#page13#oslte31#nf51" to="wv1#page1#lst3">
+        <ParameterBinding id="wv1#page13#oslte31#nf51#par27" sourceParameter="wv1#page13#prd1" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+        <ParameterBinding id="wv1#page13#oslte31#nf51#par28" sourceParameter="wv1#page13#prd2" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+        <ParameterBinding id="wv1#page13#oslte31#nf51#par47" sourceParameter="wv1#page13#prd1" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+      </NavigationFlow>
+    </OnSelectEvent>
+  </Events>
+  <Parameters>
+    <Parameter id="wv1#page13#prd1" name="Codice_Utente" type="integer"/>
+    <Parameter id="wv1#page13#prd2" name="Username" type="string"/>
+  </Parameters>
+</Page>

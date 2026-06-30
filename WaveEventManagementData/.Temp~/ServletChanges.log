@@ -1,0 +1,8 @@
+MODIFIED C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\descr\spd5.descr previous=1782845256050|1107 current=1782845855923|1107
+MODIFIED C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\descr\svu1.descr previous=1782845256034|1669 current=1782845855874|1669
+MODIFIED C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\descr\svu10.descr previous=1782845256206|1535 current=1782845856395|1535
+MODIFIED C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\descr\svu4.descr previous=1782845256081|1885 current=1782845855958|1885
+MODIFIED C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\descr\svu5.descr previous=1782845015359|1355 current=1782845855993|1355
+MODIFIED C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\descr\svu7.descr previous=1782845256159|2056 current=1782845856070|2056
+----
+Reload required -> touch C:\WebRatio\WebRatio Platform Community 9.3.2\WebRatio\webapps\WaveEventManagementData\WEB-INF\web.xml

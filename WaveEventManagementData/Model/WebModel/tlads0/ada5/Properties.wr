@@ -1,0 +1,19 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada5" name="Cancellazione Prenotazione" defaultSuccessPortDefinition="tlads0#ada5#spd8" defaultErrorPortDefinition="tlads0#ada5#epd7" transaction="true">
+  <InputPortDefinition id="tlads0#ada5#ipd7" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ada5#ipd7#sf25" to="tlads0#ada5#dlu6">
+      <ParameterBinding id="tlads0#ada5#ipd7#sf25#par40" source="tlads0#ada5#ipd7#pdp40" target="tlads0#ada5#dlu6#sc6#acond3" name="Codice Prenotazione - Codice Prenotazione"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ada5#ipd7#pdp40" array="false" name="Codice Prenotazione" type="integer"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ada5#spd8" name="Success Port" gr:x="0" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ada5#epd7" name="Error Port" gr:x="0" gr:y="300"/>
+  <Operations>
+    <Delete gr:x="440" gr:y="150" id="tlads0#ada5#dlu6" name="Cancella Prenotazione" dataBinding="cls1">
+      <ConditionalExpression id="tlads0#ada5#dlu6#sc6" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="tlads0#ada5#dlu6#sc6#acond3" name="Codice Prenotazione" predicate="eq" implied="true" attributes="cls1#att5"/>
+      </ConditionalExpression>
+      <SuccessFlow id="tlads0#ada5#dlu6#sf26" to="tlads0#ada5#spd8" automaticCoupling="true"/>
+      <ErrorFlow id="tlads0#ada5#dlu6#ef6" to="tlads0#ada5#epd7" automaticCoupling="true"/>
+    </Delete>
+  </Operations>
+</ActionDefinition>

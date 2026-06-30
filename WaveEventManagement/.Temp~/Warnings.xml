@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning key="SECURITY.PASSWORD_STRENGTH_MISSING" error="false" xpath="id('wv1#page2#frm1#fld1')">
+    <Message>The password field 'vecchia password' does not have any validation to ensure password strength</Message>
+    <Resolution>rO0ABXNyADBjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWRkVmFsaWRhdGlvblJ1bGUanuqSsm7jvAIAAkwAFmNvbXBvbmVudHNQcm9qZWN0VHlwZXN0ABZMamF2YS91dGlsL0NvbGxlY3Rpb247TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHIALmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uQWJzdHJhY3RGaXg6VTR+tF04WQIAAUwAC2Rlc2NyaXB0aW9ucQB+AAJ4cHQAJUFkZCBwYXNzd29yZCBzdHJlbmd0aCB2YWxpZGF0aW9uIHJ1bGVzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVTZXQkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAVsACGVsZW1lbnRzdAATW0xqYXZhL2xhbmcvT2JqZWN0O3hwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAAX5yAC1jb20ud2VicmF0aW8uY29tbW9ucy5tZi5Db21wb25lbnRzUHJvamVjdFR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZDTElFTlR0AB5QYXNzd29yZFN0cmVuZ3RoVmFsaWRhdGlvblJ1bGU=</Resolution>
+  </Warning>
+  <Warning key="SECURITY.PASSWORD_STRENGTH_MISSING" error="false" xpath="id('wv1#page2#frm1#fld2')">
+    <Message>The password field 'nuova password' does not have any validation to ensure password strength</Message>
+    <Resolution>rO0ABXNyADBjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWRkVmFsaWRhdGlvblJ1bGUanuqSsm7jvAIAAkwAFmNvbXBvbmVudHNQcm9qZWN0VHlwZXN0ABZMamF2YS91dGlsL0NvbGxlY3Rpb247TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHIALmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uQWJzdHJhY3RGaXg6VTR+tF04WQIAAUwAC2Rlc2NyaXB0aW9ucQB+AAJ4cHQAJUFkZCBwYXNzd29yZCBzdHJlbmd0aCB2YWxpZGF0aW9uIHJ1bGVzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVTZXQkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAVsACGVsZW1lbnRzdAATW0xqYXZhL2xhbmcvT2JqZWN0O3hwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAAX5yAC1jb20ud2VicmF0aW8uY29tbW9ucy5tZi5Db21wb25lbnRzUHJvamVjdFR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZDTElFTlR0AB5QYXNzd29yZFN0cmVuZ3RoVmFsaWRhdGlvblJ1bGU=</Resolution>
+  </Warning>
+  <Warning key="SECURITY.PASSWORD_STRENGTH_MISSING" error="false" xpath="id('wv1#page2#frm1#fld3')">
+    <Message>The password field 'conferma nuova password' does not have any validation to ensure password strength</Message>
+    <Resolution>rO0ABXNyADBjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWRkVmFsaWRhdGlvblJ1bGUanuqSsm7jvAIAAkwAFmNvbXBvbmVudHNQcm9qZWN0VHlwZXN0ABZMamF2YS91dGlsL0NvbGxlY3Rpb247TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHIALmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uQWJzdHJhY3RGaXg6VTR+tF04WQIAAUwAC2Rlc2NyaXB0aW9ucQB+AAJ4cHQAJUFkZCBwYXNzd29yZCBzdHJlbmd0aCB2YWxpZGF0aW9uIHJ1bGVzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVTZXQkU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAVsACGVsZW1lbnRzdAATW0xqYXZhL2xhbmcvT2JqZWN0O3hwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAAAX5yAC1jb20ud2VicmF0aW8uY29tbW9ucy5tZi5Db21wb25lbnRzUHJvamVjdFR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZDTElFTlR0AB5QYXNzd29yZFN0cmVuZ3RoVmFsaWRhdGlvblJ1bGU=</Resolution>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page3#frm2')">
+    <Message>The mandatory input parameter Remember Me is not provided to the component Sign in</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page3#frm2')">
+    <Message>The mandatory input parameter Username is not provided to the component Sign in</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page3#frm2')">
+    <Message>The mandatory input parameter Password is not provided to the component Sign in</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page10#frm110')">
+    <Message>The mandatory input parameter Codice Prenotazione is not provided to the component Cancella Prenotazione</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page2#frm1')">
+    <Message>The mandatory input parameter nuova password is not provided to the component Change password</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page2#frm1')">
+    <Message>The mandatory input parameter vecchia password is not provided to the component Change password</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page2#frm1')">
+    <Message>The mandatory input parameter conferma nuova password is not provided to the component Change password</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page13#frm4')">
+    <Message>The mandatory input parameter Data Prenotazione is not provided to the component Esegui Prenotazione</Message>
+  </Warning>
+  <Warning key="INTERACTION.FIELD_INPUT_OUTPUT_MISSING" error="false" xpath="id('wv1#page13#frm4')">
+    <Message>The mandatory input parameter Codice Evento is not provided to the component Esegui Prenotazione</Message>
+  </Warning>
+  <Warning key="INTERACTION.DUPLICATED_IDENTIFIER" error="true" xpath="/WebProject">
+    <Message>Some elements have duplicated final ids.</Message>
+    <Resolution>rO0ABXNyADZjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uUmVtb3ZlSWRzRHVwbGljYXRpb25GaXhrQXndFEFodgIAAHhyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHIALmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uQWJzdHJhY3RGaXg6VTR+tF04WQIAAUwAC2Rlc2NyaXB0aW9udAASTGphdmEvbGFuZy9TdHJpbmc7eHB0AApDaGFuZ2UgaWRz</Resolution>
+  </Warning>
+  <Warning key="INTERACTION.PARAM_INVALID" error="true" xpath="id('wv1#page14#oslte40#nf55')">
+    <Message>The parameter binding Codice Evento - Codice Evento references an input parameter wv1#act9.WaveEventManagementData$pdp38 not provided by the flow's target</Message>
+    <Resolution>rO0ABXNyADpjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4JENhc3RXcmFwcGVyLZgDy5Bft8wCAAB4cgBDY29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRBYnN0cmFjdFR5cGVkV3JhcHBlcnxxdHyLk3t8AgACTAALZWxlbWVudFR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO0wAC29yaWdpbmFsRml4dAApTGNvbS93ZWJyYXRpby9jb21tb25zL21mL3ZhbGlkYXRpb24vSUZpeDt4cHZyACRjb20ud2VicmF0aW8uaWRlLm1vZGVsLklXZWJNTEVsZW1lbnQAAAAAAAAAAAAAAHhwc3IANmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uU2VsZWN0TUZFbGVtZW50c0ZpeB1mxNo5ueNnAgABTAAKc2VsZWN0RXhwcnQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyADFjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkRpc3RyaWJ1dGVkRml4Uz0zl7NWCPMCAAFMAANmaXhxAH4AA3hyAC5jb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4OlU0frRdOFkCAAFMAAtkZXNjcmlwdGlvbnEAfgAIeHB0AD9SZW1vdmUgdGhlIGludmFsaWQgZmxvdyBwYXJhbWV0ZXIgd3YxI3BhZ2UxNCNvc2x0ZTQwI25mNTUjcGFyODBzcgA8Y29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRGaWx0ZXJXcmFwcGVyYAC7TwKcmjwCAAB4cQB+AAF2cgAiY29tLndlYnJhdGlvLmNvbW1vbnMubWYuSU1GRWxlbWVudAAAAAAAAAAAAAAAeHBzcgAsY29tLndlYnJhdGlvLmlkZS51aS52YWxpZGF0aW9uLlJlbW92ZUVsZW1lbnQ9w4zSfNrZcQIAAHhyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHEAfgAKcQB+AAx0ACNpZCgnd3YxI3BhZ2UxNCNvc2x0ZTQwI25mNTUjcGFyODAnKQ==</Resolution>
+  </Warning>
+  <Warning key="INTERACTION.PARAM_INVALID" error="true" xpath="id('wv1#page10#frm110#oslte110#nf110')">
+    <Message>The parameter binding Codice_Utente - PASSING references an output parameter wv1#page10#prd3 not provided by the flow's source</Message>
+    <Resolution>rO0ABXNyADpjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4JENhc3RXcmFwcGVyLZgDy5Bft8wCAAB4cgBDY29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRBYnN0cmFjdFR5cGVkV3JhcHBlcnxxdHyLk3t8AgACTAALZWxlbWVudFR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO0wAC29yaWdpbmFsRml4dAApTGNvbS93ZWJyYXRpby9jb21tb25zL21mL3ZhbGlkYXRpb24vSUZpeDt4cHZyACRjb20ud2VicmF0aW8uaWRlLm1vZGVsLklXZWJNTEVsZW1lbnQAAAAAAAAAAAAAAHhwc3IANmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uU2VsZWN0TUZFbGVtZW50c0ZpeB1mxNo5ueNnAgABTAAKc2VsZWN0RXhwcnQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyADFjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkRpc3RyaWJ1dGVkRml4Uz0zl7NWCPMCAAFMAANmaXhxAH4AA3hyAC5jb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4OlU0frRdOFkCAAFMAAtkZXNjcmlwdGlvbnEAfgAIeHB0AElSZW1vdmUgdGhlIGludmFsaWQgZmxvdyBwYXJhbWV0ZXIgd3YxI3BhZ2UxMCNmcm0xMTAjb3NsdGUxMTAjbmYxMTAjcGFyMzAxc3IAPGNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uQWJzdHJhY3RGaXgkRmlsdGVyV3JhcHBlcmAAu08CnJo8AgAAeHEAfgABdnIAImNvbS53ZWJyYXRpby5jb21tb25zLm1mLklNRkVsZW1lbnQAAAAAAAAAAAAAAHhwc3IALGNvbS53ZWJyYXRpby5pZGUudWkudmFsaWRhdGlvbi5SZW1vdmVFbGVtZW50PcOM0nza2XECAAB4cgAsY29tLndlYnJhdGlvLmlkZS51aS52YWxpZGF0aW9uLkFic3RyYWN0V1JGaXgG/Hq1Ycrm5AIAAHhxAH4ACnEAfgAMdAAtaWQoJ3d2MSNwYWdlMTAjZnJtMTEwI29zbHRlMTEwI25mMTEwI3BhcjMwMScp</Resolution>
+  </Warning>
+  <Warning key="INTERACTION.PARAM_INVALID" error="true" xpath="id('wv1#page10#frm110#oslte110#nf110')">
+    <Message>The parameter binding Username - PASSING references an output parameter wv1#page10#prd4 not provided by the flow's source</Message>
+    <Resolution>rO0ABXNyADpjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4JENhc3RXcmFwcGVyLZgDy5Bft8wCAAB4cgBDY29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRBYnN0cmFjdFR5cGVkV3JhcHBlcnxxdHyLk3t8AgACTAALZWxlbWVudFR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO0wAC29yaWdpbmFsRml4dAApTGNvbS93ZWJyYXRpby9jb21tb25zL21mL3ZhbGlkYXRpb24vSUZpeDt4cHZyACRjb20ud2VicmF0aW8uaWRlLm1vZGVsLklXZWJNTEVsZW1lbnQAAAAAAAAAAAAAAHhwc3IANmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uU2VsZWN0TUZFbGVtZW50c0ZpeB1mxNo5ueNnAgABTAAKc2VsZWN0RXhwcnQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyADFjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkRpc3RyaWJ1dGVkRml4Uz0zl7NWCPMCAAFMAANmaXhxAH4AA3hyAC5jb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4OlU0frRdOFkCAAFMAAtkZXNjcmlwdGlvbnEAfgAIeHB0AElSZW1vdmUgdGhlIGludmFsaWQgZmxvdyBwYXJhbWV0ZXIgd3YxI3BhZ2UxMCNmcm0xMTAjb3NsdGUxMTAjbmYxMTAjcGFyMzAyc3IAPGNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uQWJzdHJhY3RGaXgkRmlsdGVyV3JhcHBlcmAAu08CnJo8AgAAeHEAfgABdnIAImNvbS53ZWJyYXRpby5jb21tb25zLm1mLklNRkVsZW1lbnQAAAAAAAAAAAAAAHhwc3IALGNvbS53ZWJyYXRpby5pZGUudWkudmFsaWRhdGlvbi5SZW1vdmVFbGVtZW50PcOM0nza2XECAAB4cgAsY29tLndlYnJhdGlvLmlkZS51aS52YWxpZGF0aW9uLkFic3RyYWN0V1JGaXgG/Hq1Ycrm5AIAAHhxAH4ACnEAfgAMdAAtaWQoJ3d2MSNwYWdlMTAjZnJtMTEwI29zbHRlMTEwI25mMTEwI3BhcjMwMicp</Resolution>
+  </Warning>
+  <Warning key="INTERACTION.PARAM_INVALID" error="true" xpath="id('wv1#page13#frm4#oslte4#nf4')">
+    <Message>The parameter binding Username - PASSING references an output parameter wv1#page13#prd2 not provided by the flow's source</Message>
+    <Resolution>rO0ABXNyADpjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4JENhc3RXcmFwcGVyLZgDy5Bft8wCAAB4cgBDY29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRBYnN0cmFjdFR5cGVkV3JhcHBlcnxxdHyLk3t8AgACTAALZWxlbWVudFR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO0wAC29yaWdpbmFsRml4dAApTGNvbS93ZWJyYXRpby9jb21tb25zL21mL3ZhbGlkYXRpb24vSUZpeDt4cHZyACRjb20ud2VicmF0aW8uaWRlLm1vZGVsLklXZWJNTEVsZW1lbnQAAAAAAAAAAAAAAHhwc3IANmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uU2VsZWN0TUZFbGVtZW50c0ZpeB1mxNo5ueNnAgABTAAKc2VsZWN0RXhwcnQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyADFjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkRpc3RyaWJ1dGVkRml4Uz0zl7NWCPMCAAFMAANmaXhxAH4AA3hyAC5jb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4OlU0frRdOFkCAAFMAAtkZXNjcmlwdGlvbnEAfgAIeHB0AEJSZW1vdmUgdGhlIGludmFsaWQgZmxvdyBwYXJhbWV0ZXIgd3YxI3BhZ2UxMyNmcm00I29zbHRlNCNuZjQjcGFyMjlzcgA8Y29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRGaWx0ZXJXcmFwcGVyYAC7TwKcmjwCAAB4cQB+AAF2cgAiY29tLndlYnJhdGlvLmNvbW1vbnMubWYuSU1GRWxlbWVudAAAAAAAAAAAAAAAeHBzcgAsY29tLndlYnJhdGlvLmlkZS51aS52YWxpZGF0aW9uLlJlbW92ZUVsZW1lbnQ9w4zSfNrZcQIAAHhyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHEAfgAKcQB+AAx0ACZpZCgnd3YxI3BhZ2UxMyNmcm00I29zbHRlNCNuZjQjcGFyMjknKQ==</Resolution>
+  </Warning>
+  <Warning key="INTERACTION.PARAM_INVALID" error="true" xpath="id('wv1#page13#frm4#oslte4#nf4')">
+    <Message>The parameter binding Codice_Utente - PASSING references an output parameter wv1#page13#prd1 not provided by the flow's source</Message>
+    <Resolution>rO0ABXNyADpjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4JENhc3RXcmFwcGVyLZgDy5Bft8wCAAB4cgBDY29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRBYnN0cmFjdFR5cGVkV3JhcHBlcnxxdHyLk3t8AgACTAALZWxlbWVudFR5cGV0ABFMamF2YS9sYW5nL0NsYXNzO0wAC29yaWdpbmFsRml4dAApTGNvbS93ZWJyYXRpby9jb21tb25zL21mL3ZhbGlkYXRpb24vSUZpeDt4cHZyACRjb20ud2VicmF0aW8uaWRlLm1vZGVsLklXZWJNTEVsZW1lbnQAAAAAAAAAAAAAAHhwc3IANmNvbS53ZWJyYXRpby5jb21tb25zLm1mLnZhbGlkYXRpb24uU2VsZWN0TUZFbGVtZW50c0ZpeB1mxNo5ueNnAgABTAAKc2VsZWN0RXhwcnQAEkxqYXZhL2xhbmcvU3RyaW5nO3hyADFjb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkRpc3RyaWJ1dGVkRml4Uz0zl7NWCPMCAAFMAANmaXhxAH4AA3hyAC5jb20ud2VicmF0aW8uY29tbW9ucy5tZi52YWxpZGF0aW9uLkFic3RyYWN0Rml4OlU0frRdOFkCAAFMAAtkZXNjcmlwdGlvbnEAfgAIeHB0AEJSZW1vdmUgdGhlIGludmFsaWQgZmxvdyBwYXJhbWV0ZXIgd3YxI3BhZ2UxMyNmcm00I29zbHRlNCNuZjQjcGFyNTFzcgA8Y29tLndlYnJhdGlvLmNvbW1vbnMubWYudmFsaWRhdGlvbi5BYnN0cmFjdEZpeCRGaWx0ZXJXcmFwcGVyYAC7TwKcmjwCAAB4cQB+AAF2cgAiY29tLndlYnJhdGlvLmNvbW1vbnMubWYuSU1GRWxlbWVudAAAAAAAAAAAAAAAeHBzcgAsY29tLndlYnJhdGlvLmlkZS51aS52YWxpZGF0aW9uLlJlbW92ZUVsZW1lbnQ9w4zSfNrZcQIAAHhyACxjb20ud2VicmF0aW8uaWRlLnVpLnZhbGlkYXRpb24uQWJzdHJhY3RXUkZpeAb8erVhyubkAgAAeHEAfgAKcQB+AAx0ACZpZCgnd3YxI3BhZ2UxMyNmcm00I29zbHRlNCNuZjQjcGFyNTEnKQ==</Resolution>
+  </Warning>
+  <Warning key="SECURITY.IGNOZED_BEST_PRACTICE" error="false" xpath="/WebProject">
+    <Message>Captcha should be enabled to protect sensitive public actions: wv1#act4, wv1#act7, Creazione Evento, Cancella Prenotazione, Prenota Evento, Modifica Evento, Cambio Password Derby</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page1#lst3')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page8#lst8')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page12#lst6')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page12#lst7')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page15#lst11')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page11#lst5')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page14#lst10')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page10#lst4')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+  <Warning key="COMPONENT.MINOR_ISSUE" error="false" xpath="id('wv1#page13#lst9')">
+    <Message>Missing Sort Attributes</Message>
+  </Warning>
+</Warnings>

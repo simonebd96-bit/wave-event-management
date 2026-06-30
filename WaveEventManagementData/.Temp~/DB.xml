@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DBMetaData transactionLevel="Read Committed" productName="PostgreSQL" identifierQuoteString="&quot;" productVersion="15.18" driverVersion="42.7.11" driverMajorVersion="42" driverMinorVersion="7" driverName="PostgreSQL JDBC Driver">
+  <Schema name="information_schema"/>
+  <Schema name="pg_catalog"/>
+  <Schema name="public"/>
+</DBMetaData>

@@ -1,0 +1,20 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ada4" name="Prenotazione Evento" defaultSuccessPortDefinition="tlads0#ada4#spd7" defaultErrorPortDefinition="tlads0#ada4#epd6" transaction="true">
+  <InputPortDefinition id="tlads0#ada4#ipd6" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ada4#ipd6#sf23" to="tlads0#ada4#svu5">
+      <ParameterBinding id="tlads0#ada4#ipd6#sf23#par35" source="tlads0#ada4#ipd6#pdp35" target="tlads0#ada4#svu5.cls1#att6" name="Data Prenotazione - Data Prenotazione"/>
+      <ParameterBinding id="tlads0#ada4#ipd6#sf23#par38" source="tlads0#ada4#ipd6#pdp2" target="tlads0#ada4#svu5.as2#role3.cls2#att9" name="Codice Evento - Prenotazione.Evento"/>
+      <ParameterBinding id="tlads0#ada4#ipd6#sf23#par39" target="tlads0#ada4#svu5.as1#role2.userOID" name="User ID - Prenotazione.User" source="tlads0#ada4#ipd6#pdp7"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ada4#ipd6#pdp35" array="false" name="Data Prenotazione" type="timestamp"/>
+    <PortDefinitionParameter id="tlads0#ada4#ipd6#pdp2" array="false" name="EVENTO_2.Codice Evento(PrenotazioneToEvento)" type="integer"/>
+    <PortDefinitionParameter id="tlads0#ada4#ipd6#pdp7" array="false" name="User.codice_user(PrenotazioneToUser)" type="integer"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ada4#spd7" name="Success Port" gr:x="0" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ada4#epd6" name="Error Port" gr:x="0" gr:y="300"/>
+  <Operations>
+    <Save gr:x="525" gr:y="165" id="tlads0#ada4#svu5" action="create" name="Crea Prenotazione" dataBinding="cls1" skipBlankRecords="true">
+      <SuccessFlow id="tlads0#ada4#svu5#sf24" to="tlads0#ada4#spd7" automaticCoupling="true"/>
+      <ErrorFlow id="tlads0#ada4#svu5#ef5" to="tlads0#ada4#epd6" automaticCoupling="true"/>
+    </Save>
+  </Operations>
+</ActionDefinition>

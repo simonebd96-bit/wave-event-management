@@ -1,0 +1,5 @@
+<wr-page>
+  <wr-content for="user">
+    <wd-button context="main/gctu1/oslte3" iconText="exit_to_app" variant="mat-icon-button"></wd-button>
+  </wr-content>
+</wr-page>

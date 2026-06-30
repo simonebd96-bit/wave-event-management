@@ -1,0 +1,110 @@
+<WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1" name="Public" default="wv1#page1" register="wv1#page4" home="wv1#page6" login="wv1#page6">
+  <!-- Change Password -->
+  <Action id="wv1#act1" gr:x="555" gr:y="65" definition="tlads0#ad1">
+    <Events>
+      <SuccessEvent id="wv1#act1#scce1" definition="tlads0#ad1#spd1">
+        <NavigationFlow id="wv1#act1#scce1#nf1" to="wv1#page1" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act1#erre1" definition="tlads0#ad1#epd1">
+        <NavigationFlow id="wv1#act1#erre1#nf2" to="wv1#page2#msg1">
+          <ParameterBinding id="wv1#act1#erre1#nf2#par4" source="tlads0#ad1#epd1#pdp3" target="messages" name="Error Message - Shown Messages"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <!-- Sign In (standard WebRatio auth) -->
+  <Action id="wv1#act2" gr:x="70" gr:y="305" definition="tlads0#ad2">
+    <Events>
+      <SuccessEvent id="wv1#act2#scce2" definition="tlads0#ad2#spd2">
+        <NavigationFlow id="wv1#act2#scce2#nf5" to="wv1#page1" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act2#erre2" definition="tlads0#ad2#epd4">
+        <NavigationFlow id="wv1#act2#erre2#nf7" to="wv1#page3#msg3">
+          <ParameterBinding id="wv1#act2#erre2#nf7#par14" source="tlads0#ad2#epd4#pdp9" target="messages" name="Error Message - Shown Messages"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <!-- Logout -->
+  <Action id="wv1#act3" gr:x="40" gr:y="975" definition="tlads0#ad3">
+    <Events>
+      <SuccessEvent id="wv1#act3#scce3" definition="tlads0#ad3#spd3">
+        <NavigationFlow id="wv1#act3#scce3#nf8" to="wv1#page6" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act3#erre5" definition="tlads0#ad3#epd5"/>
+    </Events>
+  </Action>
+  <!-- Registrazione Utente -->
+  <Action id="wv1#act4" gr:x="280" gr:y="460" actionServiceRes="WaveEventManagementData$ada1">
+    <Events>
+      <SuccessEvent id="wv1#act4#scce8">
+        <NavigationFlow id="wv1#act4#scce8#nf23" to="wv1#page6#frm11" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act4#erre17"/>
+    </Events>
+  </Action>
+  <!-- Login Derby - SUCCESS va a home, ERROR torna alla LOGIN (page6) -->
+  <Action id="wv1#act7" gr:x="295" gr:y="730" actionServiceRes="WaveEventManagementData$ada2">
+    <Events>
+      <SuccessEvent id="wv1#act7#scce9">
+        <NavigationFlow id="wv1#act7#scce9#nf21" to="wv1#page1#lst3">
+          <ParameterBinding id="wv1#act7#scce9#nf21#par348" source="WaveEventManagementData$pdp13" targetParameter="wv1#page1#prd6" name="Codice_Utente - Codice_Utente"/>
+          <ParameterBinding id="wv1#act7#scce9#nf21#par349" source="WaveEventManagementData$pdp14" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+          <ParameterBinding id="wv1#act7#scce9#nf21#par352" source="WaveEventManagementData$pdp13" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act7#erre16">
+        <NavigationFlow id="wv1#act7#erre16#nf22" to="wv1#page6" automaticCoupling="true"/>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <!-- Creazione Evento -->
+  <Action id="wv1#act8" name="Creazione Evento" gr:x="965" gr:y="445" actionServiceRes="WaveEventManagementData$ada3">
+    <Events>
+      <SuccessEvent id="wv1#act8#scce11">
+        <NavigationFlow id="wv1#act8#scce11#nf33" to="wv1#page1#lst3">
+          <ParameterBinding id="wv1#act8#scce11#nf33#par415" sourceParameterBinding="wv1#page9#frm13#oslte16#nf31#par355" targetParameter="wv1#page1#prd9" name="Username - PASSING - Username"/>
+          <ParameterBinding id="wv1#act8#scce11#nf33#par45" sourceParameterBinding="wv1#page9#frm13#oslte16#nf31#par350" targetParameter="wv1#page1#prd6" name="Codice_Utente - PASSING - Codice_Utente"/>
+          <ParameterBinding id="wv1#act8#scce11#nf33#par353" sourceParameterBinding="wv1#page9#frm13#oslte16#nf31#par350" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - PASSING - filtra per utente"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act8#erre23"/>
+    </Events>
+  </Action>
+  <!-- Cancella Prenotazione -->
+  <Action id="wv1#act10" name="Cancella Prenotazione" gr:x="1310" gr:y="700" actionServiceRes="WaveEventManagementData$ada5">
+    <Events>
+      <SuccessEvent id="wv1#act10#scce13">
+        <NavigationFlow id="wv1#act10#scce13#nf37" to="wv1#page10">
+          <ParameterBinding id="wv1#act10#scce13#nf37#par310" sourceParameterBinding="wv1#page10#frm110#oslte110#nf110#par301" targetParameter="wv1#page10#prd3" name="Codice_Utente - PASSING"/>
+          <ParameterBinding id="wv1#act10#scce13#nf37#par311" sourceParameterBinding="wv1#page10#frm110#oslte110#nf110#par302" targetParameter="wv1#page10#prd4" name="Username - PASSING"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act10#erre25"/>
+    </Events>
+  </Action>
+  <!-- Prenota Evento -->
+  <Action id="wv1#act9" name="Prenota Evento" gr:x="885" gr:y="1060" actionServiceRes="WaveEventManagementData$ada4">
+    <Events>
+      <SuccessEvent id="wv1#act9#scce12">
+        <NavigationFlow id="wv1#act9#scce12#nf35" to="wv1#page10#lst4" gr:bendpoints="12,-46,2,119"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act9#erre3"/>
+    </Events>
+  </Action>
+  <!-- Modifica Evento -->
+  <!-- Cambio Password Derby -->
+  <Action id="wv1#act12" name="Cambio Password Derby" gr:x="685" gr:y="245" actionServiceRes="WaveEventManagementData$ada7">
+    <Events>
+      <SuccessEvent id="wv1#act12#scce15">
+        <NavigationFlow id="wv1#act12#scce15#nf65" to="wv1#page1#lst3">
+          <ParameterBinding id="wv1#act12#scce15#nf65#par417" sourceParameter="wv1#page1#prd9" targetParameter="wv1#page1#prd9" name="Username - Username"/>
+          <ParameterBinding id="wv1#act12#scce15#nf65#par47" sourceParameter="wv1#page1#prd6" target="wv1#page1#lst3#sc21#acond6" name="Codice_Utente - filtra per utente"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act12#erre27">
+        <NavigationFlow id="wv1#act12#erre27#nf66" to="wv1#page2" automaticCoupling="true"/>
+      </ErrorEvent>
+    </Events>
+  </Action>
+</WebView>
